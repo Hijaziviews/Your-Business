@@ -1,84 +1,124 @@
 <!DOCTYPE html>
-<html lang="ur" dir="rtl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>آرٹیفیشل انٹیلیجنس اردو میں</title>
+  <title>AI in Urdu & English - Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      background: #f3f6fa;
+      margin: 0; padding: 0;
+      background: #f1f5fa;
+      font-family: 'Segoe UI', 'Arial', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .top-section {
+      background: linear-gradient(90deg, #375fa9, #377fa9 80%);
+      color: #fff;
+      padding: 54px 16px 46px 16px;
+      text-align: center;
+      border-bottom-left-radius: 32px;
+      border-bottom-right-radius: 32px;
+      box-shadow: 0 8px 24px #b3c2e366;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 48px;
+    }
+    .intro-english {
+      font-size: 2.2em;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 0.7em;
+      margin-top: 0;
+      line-height: 1.2;
+      max-width: 700px;
+    }
+    .intro-urdu {
       font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", "Tahoma", "Arial", sans-serif;
-      color: #1a1a1a;
-      margin: 0;
-      padding: 0;
+      font-size: 2.1em;
+      color: #e7f0fa;
+      margin-bottom: 0.7em;
+      margin-top: 0;
+      line-height: 1.4;
       direction: rtl;
+      max-width: 750px;
     }
-    .container {
-      max-width: 600px;
-      margin: 40px auto;
+    .urdu-note {
+      font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", "Tahoma", "Arial", sans-serif;
+      font-size: 1.3em;
+      color: #f0f7ff;
+      margin-top: 1.2em;
+      direction: rtl;
+      max-width: 700px;
+    }
+    .tiles-container {
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+      margin-top: 64px;
+      flex-wrap: wrap;
+    }
+    .tile {
       background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 8px 32px #ccc;
-      padding: 32px 24px;
-      text-align: right;
-    }
-    h1 {
-      color: #22639a;
-      margin-bottom: .5em;
-      font-size: 2em;
-    }
-    .subtitle {
-      color: #888;
-      font-size: 1.1em;
-      margin-bottom: 1.2em;
-    }
-    .section-title {
-      color: #117788;
-      margin-top: 1em;
-      font-size: 1.2em;
-    }
-    ul {
-      padding-right: 1.2em;
-    }
-    .contact {
-      margin-top: 2em;
-      padding-top: 1em;
-      border-top: 1px solid #e0e0e0;
-      font-size: 1em;
-      color: #444;
-    }
-    a {
-      color: #0a699d;
+      border-radius: 18px;
+      box-shadow: 0 4px 18px #b3c2e3;
+      width: 210px;
+      height: 140px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 1.18em;
+      color: #27578a;
       text-decoration: none;
+      transition: transform 0.12s, box-shadow 0.12s;
+      cursor: pointer;
+      border: 2px solid #e4e9f3;
     }
-    a:hover {
-      text-decoration: underline;
+    .tile:hover {
+      transform: translateY(-6px) scale(1.03);
+      box-shadow: 0 8px 32px #86a7db;
+      background: #f8fbff;
+      border: 2px solid #b8d2f6;
+    }
+    .urdu-title {
+      font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", "Tahoma", "Arial", sans-serif;
+      font-size: 1em;
+      color: #0e5a6d;
+      margin-top: 7px;
     }
     @media (max-width: 700px) {
-      .container { padding: 18px 2vw; }
-      h1 { font-size: 1.3em; }
+      .tiles-container { gap: 12vw; margin-top: 36px; }
+      .tile { width: 42vw; min-width: 120px; height: 95px; font-size: 1em; }
+      .top-section { gap: 32px; padding: 36px 2vw 24px 2vw; }
+      .intro-english, .intro-urdu { font-size: 1.2em; }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>آرٹیفیشل انٹیلیجنس اردو میں</h1>
-    <div class="subtitle">آسان زبان میں مصنوعی ذہانت کی معلومات، خبریں اور کورسز</div>
-    <p>
-      اس ویب سائٹ پر آپ کو آرٹیفیشل انٹیلیجنس (AI) کی بنیادی معلومات، جدید ٹیکنالوجی کی خبریں، اور مفید کورسز ملیں گے - سب کچھ آسان اردو زبان میں۔
-    </p>
-    <div class="section-title">کیا آپ یہاں سیکھ سکتے ہیں؟</div>
-    <ul>
-      <li>مصنوعی ذہانت کی بنیادی باتیں</li>
-      <li>AI کیسے کام کرتا ہے؟</li>
-      <li>اردو میں AI کورسز اور ویڈیوز</li>
-      <li>جدید AI خبریں اور اپڈیٹس</li>
-      <li>عمومی سوالات اور جوابات</li>
-    </ul>
-    <div class="section-title">ہم سے رابطہ کریں</div>
-    <div class="contact">
-      ای میل: <a href="mailto:aiinurdu@example.com">aiinurdu@example.com</a>
+  <div class="top-section">
+    <div class="intro-english">
+      Need high income? <br>Join the family of AI
     </div>
+    <div class="intro-urdu">
+      AI اگر آپ کو زیادہ کمانا ہے، تو آئیے کی فیملی میں شامل ہو جائیں
+    </div>
+    <div class="urdu-note">
+      اگر آپ کے پاس نوکری نہیں ہے، تو یہی وقت ہے خوشحال مستقبل کی شروعات کرنے کا
+    </div>
+  </div>
+  <div class="tiles-container">
+    <a class="tile" href="introduction.html">
+      Introduction<br>
+      <span class="urdu-title">تعارف</span>
+    </a>
+    <a class="tile" href="history.html">
+      History<br>
+      <span class="urdu-title">تاریخ</span>
+    </a>
   </div>
 </body>
 </html>
