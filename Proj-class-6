@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <meta charset="UTF-8">
+  <title>کم تعلیم اور AI کی مدد سے ایک لاکھ روپے ماہانہ – عملی گائیڈ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #f7fafc;
+      font-family: 'Segoe UI', Arial, 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', sans-serif;
+      margin: 0;
+      direction: rtl;
+      color: #28313f;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 900px;
+      margin: 32px auto;
+      padding: 0 18px;
+    }
+    .question {
+      background: #fef3c7;
+      border-right: 7px solid #fbbf24;
+      border-radius: 9px;
+      padding: 18px 18px 10px 18px;
+      margin-bottom: 18px;
+      font-size: 1.25em;
+      color: #a16207;
+      box-shadow: 0 2px 10px #ffeaa033;
+    }
+    .answer {
+      background: #ecfdf5;
+      border-right: 7px solid #10b981;
+      border-radius: 9px;
+      padding: 18px 18px 10px 18px;
+      margin-bottom: 18px;
+      font-size: 1.13em;
+      color: #065f46;
+      box-shadow: 0 2px 10px #b7f9e033;
+    }
+    .plan {
+      background: #f1f5f9;
+      border-right: 7px solid #2563eb;
+      border-radius: 9px;
+      padding: 18px 18px 10px 18px;
+      margin-bottom: 18px;
+      font-size: 1.13em;
+      color: #1e293b;
+      box-shadow: 0 2px 10px #c7dafe33;
+    }
+    ul, ol {
+      margin-right: 24px;
+      margin-bottom: 12px;
+    }
+    li {
+      margin-bottom: 7px;
+    }
+    .cta {
+      background: #fff7ed;
+      border-right: 7px solid #fb923c;
+      border-radius: 9px;
+      padding: 18px;
+      margin-top: 30px;
+      font-size: 1.13em;
+      color: #b45309;
+      box-shadow: 0 2px 10px #fed7aa33;
+      text-align: center;
+    }
+    .back-link {
+      display: block;
+      margin: 34px auto 0 auto;
+      text-align: center;
+      font-size: 1em;
+      color: #2357ad;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.14s;
+      max-width: 320px;
+    }
+    .back-link:hover { color: #3982e9; }
+    @media (max-width: 600px) {
+      .container { padding: 0 2vw; }
+      .question, .answer, .plan, .cta { font-size: 1em; padding: 13px 7px 7px 7px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="question">
+      ❓ <strong>سوال</strong><br>
+      میری تعلیم صرف چھ جماعت تک ہے۔ میں روزانہ کچرا چن کر اور بیچ کر روزی کماتا ہوں۔ میں کس  AI یا ChatGPT کی مدد سے ماہانہ ایک لاکھ روپے کما سکتا ہوں؟
+    </div>
+    <div class="answer">
+      ✅ <strong>جواب (ممکنہ راستے)</strong><br>
+      <ul>
+        <li><strong>یوٹیوب اور موبائل ویڈیوز سے کمائی</strong><br>
+          اگر آپ کے پاس موبائل ہے تو آپ آسانی سے یوٹیوب چینل شروع کر سکتے ہیں۔<br>
+          آپ ویڈیوز بنائیں جیسے:
+          <ul>
+            <li>کچرا ری سائیکل کرنے کے طریقے</li>
+            <li>عام آدمی کے لیے AI کا فائدہ</li>
+            <li>سادہ کاروباری مشورے</li>
+          </ul>
+          ویڈیو کا اسکرپٹ آپ ChatGPT سے بنوا لیں۔ آواز ڈالنے کے لیے مفت AI وائس ایپ استعمال کریں۔<br>
+          ایک سال کے اندر جب چینل پر 1000 سبسکرائبرز اور 4000 گھنٹے واچ ٹائم ہو جائے گا تو یوٹیوب آپ کو اشتہارات سے پیسے دینا شروع کر دے گا۔<br>
+          یوٹیوب پر ایک مہینے میں 25–30 ویڈیوز ڈالنے سے تقریباً 1 سے 2 لاکھ روپے کمانا ممکن ہے۔
+        </li>
+        <hr>
+        <li><strong>فری لانسنگ (Fiverr, Upwork وغیرہ)</strong><br>
+          آپ چھوٹے چھوٹے کام کر سکتے ہیں، جیسے:
+          <ul>
+            <li>اردو سے انگریزی ترجمہ یا الٹا،</li>
+            <li>آڈیو کو ٹیکسٹ میں بدلنا،</li>
+            <li>سادہ بلاگ یا مضمون لکھنا۔</li>
+          </ul>
+          ChatGPT یہ سب کرنے میں آپ کی مدد کرے گا۔<br>
+          Fiverr پر ایک چھوٹے کام کا ریٹ 500 سے 1500 روپے ہے۔ اگر آپ روز کے 4 آرڈر مکمل کر لیں تو مہینے کے 60,000–90,000 روپے آسانی سے بن سکتے ہیں۔ اگر آپ 5–6 آرڈر روز کے سنبھال لیں تو یہ رقم ایک لاکھ سے اوپر جا سکتی ہے۔
+        </li>
+        <hr>
+        <li>🔹 <strong>مائیکرو ٹاسکس (چھوٹے آن لائن کام)</strong><br>
+          کچھ ویب سائٹس پر بہت چھوٹے چھوٹے کام ملتے ہیں جیسے:
+          <ul>
+            <li>تصویروں کو لیبل لگانا،</li>
+            <li>جملے کا ترجمہ کرنا،</li>
+            <li>ڈیٹا کی صفائی کرنا۔</li>
+          </ul>
+          یہ کام ChatGPT کی مدد سے آپ چند منٹوں میں مکمل کر سکتے ہیں۔<br>
+          ایک دن میں اگر آپ 500–800 روپے کے کام کریں تو مہینے کے آخر میں تقریباً 20,000–25,000 روپے بن سکتے ہیں۔ اس کو آپ یوٹیوب یا فری لانسنگ کے ساتھ ملا لیں تو ہدف (1 لاکھ روپے) باآسانی پورا ہو جائے گا۔
+        </li>
+        <hr>
+        <li>🔹 <strong>مقامی سطح پر چھوٹی ٹریننگ یا سروس</strong><br>
+          آپ اپنے محلے میں یا دوستوں کو یہ سروس دے سکتے ہیں کہ:
+          <ul>
+            <li>خط یا درخواستیں AI سے لکھوا دیں،</li>
+            <li>موبائل پر معلومات ڈھونڈ کر دیں،</li>
+            <li>یا سادہ پریزنٹیشنز/نوٹس تیار کر دیں۔</li>
+          </ul>
+          آپ اس کے لیے فی گھنٹہ 200–500 روپے لے سکتے ہیں۔<br>
+          اگر روزانہ 3–4 گھنٹے کام ملے تو مہینے کے 25,000–30,000 روپے صرف مقامی سروس سے آ سکتے ہیں۔
+        </li>
+      </ul>
+    </div>
+    <div class="plan">
+      <strong>📌 مرحلہ وار عملی پلان</strong>
+      <ul>
+        <li><strong>پہلا مہینہ</strong>
+          <ul>
+            <li>موبائل پر یوٹیوب اور Fiverr کے بنیادی کورس دیکھیں (اردو میں مفت مل جائیں گے)۔</li>
+            <li>ChatGPT پر پریکٹس کریں (ترجمہ، بلاگ لکھوانا، آڈیو کو ٹیکسٹ میں بدلنا)۔</li>
+            <li>ایک یوٹیوب چینل کھولیں اور 5 ویڈیوز ڈالیں۔</li>
+          </ul>
+        </li>
+        <li><strong>دوسرا مہینہ</strong>
+          <ul>
+            <li>Fiverr پر 3 خدمات (gigs) ڈالیں:
+              <ol>
+                <li>ترجمہ (اردو ↔ انگریزی)</li>
+                <li>آڈیو سے ٹیکسٹ</li>
+                <li>بلاگ لکھنا</li>
+              </ol>
+            </li>
+            <li>یوٹیوب پر ہفتے میں 2 ویڈیوز ڈالنا شروع کریں۔</li>
+          </ul>
+        </li>
+        <li><strong>تیسرا سے چھٹا مہینہ</strong>
+          <ul>
+            <li>Fiverr پر روزانہ کم از کم 10 پروپوزل بھیجیں تاکہ آرڈر ملیں۔</li>
+            <li>یوٹیوب پر 25–30 ویڈیوز ڈال چکے ہوں گے → آہستہ آہستہ views اور subscribers بڑھیں گے۔</li>
+            <li>مائیکرو ٹاسکس یا مقامی AI سروس کو بطور اضافی آمدنی شامل کریں۔</li>
+          </ul>
+        </li>
+        <li><strong>چھ ماہ کے بعد</strong>
+          <ul>
+            <li>فری لانسنگ سے مہینے کے 60,000–80,000 روپے۔</li>
+            <li>یوٹیوب سے اشتہارات اور ویوز کے ذریعے 30,000–50,000 روپے۔</li>
+            <li><strong>مجموعی آمدنی = 1 لاکھ روپے یا اس سے زیادہ۔</strong></li>
+          </ul>
+        </li>
+      </ul>
+      <div style="margin-top:10px;font-weight:bold;">
+        🌟 مطلب یہ ہے کہ کم تعلیم کے باوجود، صرف محنت، موبائل اور AI/ChatGPT کا استعمال کر کے آپ باآسانی مہینے کا ایک لاکھ روپے کما سکتے ہیں۔
+      </div>
+    </div>
+    <div class="cta">
+      کیا آپ چاہتے ہیں کہ میں آپ کے لیے Fiverr کے 3 آسان Gig کے نمونے (اردو اور انگریزی دونوں میں) بنا دوں تاکہ آپ فوراً اپلوڈ کر سکیں اور پہلا قدم شروع کریں؟
+    </div>
+    <a class="back-link" href="AI-intro-urdu.html">⟵ واپس تعارف صفحہ</a>
+  </div>
+</body>
+</html>
