@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration | AI Urdu & English</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { background: #f3f6fa; font-family: 'Segoe UI', Arial, sans-serif; margin:0; min-height:100vh;}
+    .container { max-width: 430px; margin: 40px auto; background: #fff; border-radius: 14px; box-shadow: 0 8px 32px #c8d2e366; padding: 36px 24px;}
+    h2 { color: #234a74; text-align: center; margin-top: 0;}
+    .form-group { margin-bottom: 20px;}
+    label { display: block; font-weight: 500; margin-bottom: 6px;}
+    input[type="text"], input[type="email"] {
+      width: 100%; padding: 9px 8px; border: 1.5px solid #b5c9e3; border-radius: 6px;
+      font-size: 1em; box-sizing: border-box;
+    }
+    input:focus { outline: 2px solid #316ac5; border-color: #316ac5;}
+    .btn {
+      width: 100%; background: #3377c6; color: #fff; font-size: 1.15em;
+      border: none; border-radius: 7px; padding: 11px 0; margin-top: 12px; cursor: pointer;
+      transition: background 0.13s;
+    }
+    .btn:hover { background: #2a5d9f;}
+    .note { color: #9b3126; font-size: 0.98em; margin-bottom: 8px;}
+    .success { color: #188a3c; font-size: 1.03em; text-align: center;}
+    .error { color: #cc2a2a; font-size: 1em; margin-bottom: 10px;}
+    @media (max-width: 600px) {
+      .container { padding: 22px 4vw;}
+      h2 { font-size: 1.18em;}
+      input, .btn { font-size: 0.96em;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Registration فارم</h2>
+    <form id="registrationForm" autocomplete="off">
+      <div class="form-group">
+        <label for="firstName">First Name (پہلا نام)</label>
+        <input type="text" id="firstName" name="firstName" required autocomplete="off">
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name (آخری نام)</label>
+        <input type="text" id="lastName" name="lastName" required autocomplete="off">
+      </div>
+      <div class="form-group">
+        <label for="address">Address (پتہ)</label>
+        <input type="text" id="address" name="address" required autocomplete="off">
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number (فون نمبر)</label>
+        <input type="text" id="phone" name="phone" maxlength="15" autocomplete="off">
+      </div>
+      <div class="form-group">
+        <label for="whatsapp">WhatsApp Number (واٹس ایپ نمبر)</label>
+        <input type="text" id="whatsapp" name="whatsapp" maxlength="15" autocomplete="off">
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address (ای میل)</label>
+        <input type="email" id="email" name="email" autocomplete="off">
+      </div>
+      <div class="note">
+        * At least one of Phone Number or WhatsApp Number is required.
+      </div>
+      <div class="error" id="error"></div>
+      <button type="submit" class="btn">Register / رجسٹر کریں</button>
+    </form>
+  </div>
+  <script>
+    document.getElementById('registrationForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const firstName = document.getElementById('firstName').value.trim();
+      const lastName = document.getElementById('lastName').value.trim();
+      const address = document.getElementById('address').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const whatsapp = document.getElementById('whatsapp').value.trim();
+      const errorDiv = document.getElementById('error');
+      errorDiv.textContent = '';
+
+      // Validation
+      if (!firstName || !lastName || !address) {
+        errorDiv.textContent = 'Please fill in all the required fields.';
+        return;
+      }
+      if (!phone && !whatsapp) {
+        errorDiv.textContent = 'At least one of Phone Number or WhatsApp Number is required.';
+        return;
+      }
+      // All ok, proceed to introduction.html
+      window.location.href = "introduction.html";
+    });
+  </script>
+</body>
+</html>
