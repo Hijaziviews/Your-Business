@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <meta charset="UTF-8">
+  <title>مصنوعی ذہانت سے بہتر کمائی – ترغیب</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #f7fafc;
+      font-family: 'Segoe UI', Arial, 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', sans-serif;
+      margin: 0;
+      direction: rtl;
+      color: #28313f;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 18px;
+    }
+    .motivation-box {
+      background: linear-gradient(90deg, #fef3c7 60%, #d1fae5 100%);
+      border-right: 7px solid #fbbf24;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px #b3c2e366;
+      padding: 32px 24px;
+      font-size: 1.25em;
+      color: #065f46;
+      font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', Tahoma, Arial, sans-serif;
+      line-height: 2.1;
+      margin-bottom: 34px;
+      transition: box-shadow 0.16s;
+    }
+    .motivation-box strong {
+      color: #b45309;
+      font-size: 1.13em;
+    }
+    @media (max-width: 600px) {
+      .container { max-width: 99vw; padding: 0 2vw; }
+      .motivation-box { font-size: 1.04em; padding: 18px 7px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="motivation-box">
+      آپ مصنوعی ذہانت سے زیادہ ذہین بن سکتے ہیں، آپ کو صرف مشق کی ضرورت ہے۔<br>
+      آئیے نئے طریقے تلاش کریں جن کے ذریعے مصنوعی ذہانت کو استعمال کر کے اچھی کمائی کی جا سکے۔<br>
+      آئیے سیکھنے کے نئے طریقے ڈھونڈیں۔ مصنوعی ذہانت نے آمدنی کے نئے ذرائع متعارف کرائے ہیں — زیادہ آمدنی، بہتر آمدنی۔
+    </div>
+  </div>
+</body>
+</html>
