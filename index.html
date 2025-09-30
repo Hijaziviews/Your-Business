@@ -14,7 +14,7 @@
       font-size: 2em; /* BIGGER FONT */
     }
     .container {
-      max-width: 950px;
+      max-width: 1100px;
       margin: 44px auto 0 auto;
       padding: 0 20px;
       display: flex;
@@ -52,6 +52,9 @@
     .brown { background: linear-gradient(100deg, #f7f5ee 60%, #f3e9da 100%);}
     .yellow { background: linear-gradient(100deg, #fffde4 60%, #fff6c9 100%);}
     .purple { background: linear-gradient(100deg, #f8f6ff 60%, #e9e6fa 100%);}
+    .blue { background: linear-gradient(100deg, #e6f0fb 60%, #dbeafe 100%);}
+    .orange { background: linear-gradient(100deg, #fff2e4 60%, #ffe9c9 100%);}
+    .red { background: linear-gradient(100deg, #fee2e2 60%, #fecaca 100%);}
     .sketch {
       position: absolute;
       left: 16px;
@@ -61,6 +64,26 @@
       opacity: 0.28;
       pointer-events: none;
     }
+    .more-projects-link {
+      text-align: center;
+      margin: 42px 0 22px 0;
+    }
+    .more-projects-link a {
+      display: inline-block;
+      background: linear-gradient(100deg,#e4fbe6 60%,#a7e3f0 100%);
+      color: #2563eb;
+      font-size: 1.15em;
+      padding: 18px 38px;
+      border-radius: 24px 36px 24px 36px;
+      box-shadow: 0 6px 20px #b7f9e055, 0 1px 2px #0001;
+      text-decoration: none;
+      font-weight: bold;
+      transition: box-shadow 0.14s, transform 0.11s;
+    }
+    .more-projects-link a:hover {
+      box-shadow: 0 14px 34px #a7e3f099, 0 2px 8px #0002;
+      background: linear-gradient(100deg,#a7e3f0 60%,#e4fbe6 100%);
+    }
     @media (max-width: 900px) {
       .container { flex-direction: column; gap: 22px; }
       .ai-box { max-width: 98vw; min-width: 0; }
@@ -69,6 +92,7 @@
       .container { padding: 0 4vw; }
       .ai-box { font-size: 1em; padding: 22px 9px 38px 9px;}
       .sketch { left: 8px; width: 44px; height: 44px;}
+      .more-projects-link a { font-size: 1em; padding: 12px 8vw;}
     }
   </style>
 </head>
@@ -104,19 +128,56 @@
       </span>
     </button>
     <!-- Box 4 -->
-    <button class="ai-box purple" onclick="window.location.href='more-projects.html'">
-      مزید پروجیکٹس
+    <button class="ai-box purple" onclick="window.location.href='proj-eng.html'">
+      پروجیکٹ 8<br>Project 8
       <span class="sketch">
-        <!-- Space/Science SVG Sketch -->
-        <svg viewBox="0 0 56 56" fill="none">
-          <circle cx="28" cy="28" r="24" stroke="#a78bfa" stroke-width="2.7"/>
-          <ellipse cx="28" cy="28" rx="12" ry="24" stroke="#7dd87f" stroke-width="2"/>
-          <ellipse cx="28" cy="28" rx="24" ry="6" stroke="#e6c16b" stroke-width="1.2"/>
-          <circle cx="46" cy="28" r="2.5" fill="#bfa47a"/>
-          <circle cx="10" cy="28" r="2.5" fill="#fb923c"/>
-        </svg>
+        <!-- AI Brain SVG -->
+        <svg viewBox="0 0 54 54" fill="none"><ellipse cx="27" cy="27" rx="18" ry="15" stroke="#a78bfa" stroke-width="2.7"/><path d="M16 36 Q25 18 27 27 Q29 36 38 18" stroke="#2563eb" stroke-width="2.3" fill="none"/><circle cx="22" cy="27" r="2.5" fill="#7dd87f"/><circle cx="27" cy="27" r="2.5" fill="#2563eb"/><circle cx="32" cy="25" r="2.5" fill="#e6c16b"/></svg>
       </span>
     </button>
+    <!-- Box 5 -->
+    <button class="ai-box blue" onclick="window.location.href='proj-ba.html'">
+      پروجیکٹ 9<br>Project 9
+      <span class="sketch">
+        <!-- Monitor SVG -->
+        <svg viewBox="0 0 54 54" fill="none"><rect x="10" y="10" width="34" height="24" rx="5" stroke="#2563eb" stroke-width="2.3"/><rect x="16" y="36" width="22" height="4" rx="2" stroke="#bfa47a" stroke-width="1.4"/><circle cx="27" cy="18" r="2.7" fill="#2563eb"/></svg>
+      </span>
+    </button>
+    <!-- Box 6 -->
+    <button class="ai-box orange" onclick="window.location.href='proj-mba.html'">
+      پروجیکٹ 10<br>Project 10
+      <span class="sketch">
+        <!-- Vector Network SVG -->
+        <svg viewBox="0 0 54 54" fill="none"><circle cx="17" cy="27" r="7" stroke="#2563eb" stroke-width="2"/><circle cx="37" cy="27" r="7" stroke="#10b981" stroke-width="2"/><circle cx="27" cy="12" r="4" stroke="#e6c16b" stroke-width="1.6"/><circle cx="27" cy="42" r="4" stroke="#bfa47a" stroke-width="1.6"/><line x1="24" y1="20" x2="27" y2="12" stroke="#2563eb" stroke-width="1.3"/><line x1="30" y1="20" x2="27" y2="12" stroke="#10b981" stroke-width="1.3"/><line x1="24" y1="34" x2="27" y2="42" stroke="#2563eb" stroke-width="1.3"/><line x1="30" y1="34" x2="27" y2="42" stroke="#10b981" stroke-width="1.3"/></svg>
+      </span>
+    </button>
+    <!-- Box 7 -->
+    <button class="ai-box red" onclick="window.location.href='proj-moblie-3.html'">
+      پروجیکٹ 11<br>Project 11
+      <span class="sketch">
+        <!-- Mobile SVG -->
+        <svg viewBox="0 0 54 54" fill="none"><rect x="15" y="8" width="24" height="38" rx="6" stroke="#fb923c" stroke-width="2.3"/><rect x="23" y="42" width="8" height="4" rx="1.5" fill="#10b981"/><circle cx="27" cy="12" r="2.2" fill="#7dd87f"/></svg>
+      </span>
+    </button>
+    <!-- Box 8 -->
+    <button class="ai-box brown" onclick="window.location.href='proj-class-11.html'">
+      پروجیکٹ 12<br>Project 12
+      <span class="sketch">
+        <!-- Book SVG -->
+        <svg viewBox="0 0 54 54" fill="none"><rect x="8" y="10" width="38" height="34" rx="6" stroke="#bfa47a" stroke-width="2.3"/><path d="M27 10v34" stroke="#bfa47a" stroke-width="2.1"/><path d="M8 18h38" stroke="#bfa47a" stroke-width="1.6"/></svg>
+      </span>
+    </button>
+    <!-- Box 9 -->
+    <button class="ai-box green" onclick="window.location.href='proj-phsy.html'">
+      پروجیکٹ 13<br>Project 13
+      <span class="sketch">
+        <!-- Atom SVG -->
+        <svg viewBox="0 0 54 54" fill="none"><ellipse cx="27" cy="27" rx="15" ry="6" stroke="#2563eb" stroke-width="2"/><ellipse cx="27" cy="27" rx="6" ry="15" stroke="#10b981" stroke-width="2" transform="rotate(45 27 27)"/><ellipse cx="27" cy="27" rx="6" ry="15" stroke="#e6c16b" stroke-width="2" transform="rotate(-45 27 27)"/><circle cx="27" cy="27" r="3.5" fill="#bfa47a"/></svg>
+      </span>
+    </button>
+  </div>
+  <div class="more-projects-link">
+    <a href="more-projects.html">مزید پروجیکٹس دیکھیں</a>
   </div>
 </body>
 </html>
