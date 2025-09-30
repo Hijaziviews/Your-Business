@@ -11,6 +11,7 @@
       margin: 0;
       direction: rtl;
       color: #28313f;
+      font-size: 2em; /* BIGGER FONT */
     }
     .container {
       max-width: 950px;
@@ -28,23 +29,23 @@
       min-width: 260px;
       max-width: 350px;
       border-radius: 26px 26px 56px 26px;
-      box-shadow: 0 4px 36px #b7f9e033, 0 1px 2px #0001;
-      padding: 38px 24px 38px 24px;
-      font-size: 2em;
+      box-shadow: 0 8px 30px #b7f9e099, 0 1px 6px #0002;
+      padding: 48px 24px 48px 24px;
+      font-size: 1.08em;
       border: none;
       outline: none;
       cursor: pointer;
       margin-bottom: 0;
       text-align: right;
       position: relative;
-      transition: box-shadow 0.26s, transform 0.14s;
+      transition: box-shadow 0.18s, transform 0.12s;
       background: #fff;
       overflow: hidden;
       white-space: pre-line;
     }
     .ai-box:hover {
-      box-shadow: 0 8px 48px #b7f9e077, 0 2px 8px #0002;
-      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 16px 60px #b7f9e0cc, 0 2px 8px #0003;
+      transform: translateY(-7px) scale(1.04);
       z-index: 2;
     }
     .green { background: linear-gradient(100deg, #e4fbe6 60%, #c6ece5 100%);}
@@ -66,7 +67,7 @@
     }
     @media (max-width: 600px) {
       .container { padding: 0 4vw; }
-      .ai-box { font-size: 1.3em; padding: 22px 9px 38px 9px;}
+      .ai-box { font-size: 1em; padding: 22px 9px 38px 9px;}
       .sketch { left: 8px; width: 44px; height: 44px;}
     }
   </style>
@@ -104,8 +105,7 @@
     </button>
     <!-- Box 4 -->
     <button class="ai-box purple" onclick="window.location.href='more-projects.html'">
-      مزید پروجیکٹس<br>
-      Project 8, Project 9, Project 10, Project 11, Project 12, More Projects
+      مزید پروجیکٹس
       <span class="sketch">
         <!-- Space/Science SVG Sketch -->
         <svg viewBox="0 0 56 56" fill="none">
