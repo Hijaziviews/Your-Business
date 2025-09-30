@@ -17,6 +17,8 @@
       max-width: 900px;
       margin: 32px auto;
       padding: 0 18px;
+      font-size: 2em; /* Increased font size by about 6pt */
+      line-height: 1.8;
     }
     .question {
       background: #fef3c7;
@@ -24,9 +26,10 @@
       border-radius: 9px;
       padding: 18px 18px 10px 18px;
       margin-bottom: 18px;
-      font-size: 1.23em;
+      font-size: 1.07em;
       color: #a16207;
       box-shadow: 0 2px 10px #ffeaa033;
+      position: relative;
     }
     .section {
       background: #ecfdf5;
@@ -34,9 +37,10 @@
       border-radius: 9px;
       padding: 18px 18px 10px 18px;
       margin-bottom: 18px;
-      font-size: 1.13em;
+      font-size: 0.97em;
       color: #065f46;
       box-shadow: 0 2px 10px #b7f9e033;
+      position: relative;
     }
     .plan {
       background: #f1f5f9;
@@ -44,17 +48,16 @@
       border-radius: 9px;
       padding: 18px 18px 10px 18px;
       margin-bottom: 18px;
-      font-size: 1.13em;
+      font-size: 0.97em;
       color: #1e293b;
       box-shadow: 0 2px 10px #c7dafe33;
+      position: relative;
     }
     ul, ol {
       margin-right: 24px;
       margin-bottom: 12px;
     }
-    li {
-      margin-bottom: 7px;
-    }
+    li { margin-bottom: 7px; }
     hr {
       border: none;
       border-top: 1px solid #e5e7eb;
@@ -66,10 +69,20 @@
       border-radius: 9px;
       padding: 18px;
       margin-top: 28px;
-      font-size: 1.13em;
+      font-size: 0.97em;
       color: #b45309;
       box-shadow: 0 2px 10px #fed7aa33;
       text-align: right;
+      position: relative;
+    }
+    .sketch {
+      display: block;
+      margin: 36px auto 30px auto;
+      opacity: 0.22;
+      max-width: 180px;
+      width: 90%;
+      min-width: 120px;
+      height: auto;
     }
     .back-link {
       display: block;
@@ -84,8 +97,9 @@
     }
     .back-link:hover { color: #3982e9; }
     @media (max-width: 600px) {
-      .container { padding: 0 2vw; }
+      .container { padding: 0 2vw; font-size: 1.1em;}
       .question, .section, .plan, .summary { font-size: 1em; padding: 13px 7px 7px 7px;}
+      .sketch { max-width: 110px; min-width: 60px;}
     }
   </style>
 </head>
@@ -95,6 +109,18 @@
       ❓ سوال<br>
       میری تعلیم صرف چھ جماعت تک ہے۔ میں روزانہ کچرا چن کر اور بیچ کر روزی کماتا ہوں۔ میں کس طرح AI یا ChatGPT کی مدد سے ماہانہ ایک لاکھ روپے کما سکتا ہوں؟
     </div>
+
+    <!-- SKETCH 1: AI Brain -->
+    <span class="sketch">
+      <svg viewBox="0 0 110 64" fill="none">
+        <ellipse cx="55" cy="32" rx="45" ry="28" stroke="#10b981" stroke-width="3"/>
+        <path d="M22 48 Q40 18 55 32 Q70 45 88 18" stroke="#2563eb" stroke-width="2.5" fill="none"/>
+        <circle cx="32" cy="30" r="4" fill="#fbbf24"/>
+        <circle cx="55" cy="32" r="4" fill="#2563eb"/>
+        <circle cx="78" cy="25" r="4" fill="#10b981"/>
+      </svg>
+    </span>
+
     <div class="section">
       ✅ <strong>جواب (ممکنہ راستے)</strong>
       <ul>
@@ -133,6 +159,15 @@
           یہ کام ChatGPT کی مدد سے آپ چند منٹوں میں مکمل کر سکتے ہیں۔<br>
           ایک دن میں اگر آپ 500–800 روپے کے کام کریں تو مہینے کے آخر میں تقریباً 20,000–25,000 روپے بن سکتے ہیں۔ اس کو آپ یوٹیوب یا فری لانسنگ کے ساتھ ملا لیں تو ہدف (1 لاکھ روپے) باآسانی پورا ہو جائے گا۔
         </li>
+        <!-- SKETCH 2: Computer Monitor -->
+        <span class="sketch">
+          <svg viewBox="0 0 130 90" fill="none">
+            <rect x="18" y="15" width="94" height="54" rx="7" stroke="#2563eb" stroke-width="3"/>
+            <rect x="40" y="74" width="50" height="8" rx="2" stroke="#bfa47a" stroke-width="2" fill="#fff"/>
+            <rect x="58" y="70" width="14" height="8" rx="3" stroke="#fbbf24" stroke-width="1.6" fill="#fff"/>
+            <circle cx="65" cy="25" r="4" fill="#2563eb"/>
+          </svg>
+        </span>
         <li>
           <strong>🔹 4. مقامی سطح پر چھوٹی ٹریننگ یا سروس</strong><br>
           آپ اپنے محلے میں یا دوستوں کو یہ سروس دے سکتے ہیں کہ:
@@ -146,6 +181,17 @@
         </li>
       </ul>
     </div>
+
+    <!-- SKETCH 3: Rocket - Space/Startup -->
+    <span class="sketch">
+      <svg viewBox="0 0 100 100" fill="none">
+        <path d="M50 80 L70 40 Q60 20 50 12 Q40 20 30 40 L50 80 Z" stroke="#e6c16b" stroke-width="3" fill="none"/>
+        <circle cx="50" cy="30" r="7" stroke="#e6c16b" stroke-width="2.2" fill="#fffbe9"/>
+        <path d="M50 80 Q52 90 55 95" stroke="#fb923c" stroke-width="2"/>
+        <path d="M50 80 Q48 90 45 95" stroke="#fb923c" stroke-width="2"/>
+      </svg>
+    </span>
+
     <div class="plan">
       <strong>📌 مرحلہ وار عملی پلان</strong>
       <ul>
@@ -187,6 +233,18 @@
         🌟 مطلب یہ ہے کہ کم تعلیم کے باوجود، صرف محنت، موبائل اور AI/ChatGPT کا استعمال کر کے آپ باآسانی مہینے کا ایک لاکھ روپے کما سکتے ہیں۔
       </div>
     </div>
+
+    <!-- SKETCH 4: Education (Book & Graduation Cap) -->
+    <span class="sketch">
+      <svg viewBox="0 0 170 70" fill="none">
+        <rect x="18" y="26" width="120" height="22" rx="8" stroke="#bfa47a" stroke-width="3" fill="#fff"/>
+        <rect x="30" y="38" width="96" height="6" rx="2" stroke="#10b981" stroke-width="1.3" fill="#fff"/>
+        <path d="M85 12 L120 26 L85 40 L50 26 Z" stroke="#2563eb" stroke-width="2.2" fill="#f3e9da"/>
+        <rect x="78" y="41" width="14" height="8" rx="2" stroke="#bfa47a" stroke-width="1" fill="#fff"/>
+        <rect x="83" y="49" width="4" height="6" rx="1" stroke="#bfa47a" stroke-width="0.4" fill="#fff"/>
+      </svg>
+    </span>
+
     <div class="summary">
       کیا آپ چاہتے ہیں کہ میں آپ کے لیے Fiverr کے 3 آسان Gig کے نمونے (اردو اور انگریزی دونوں میں) بنا دوں تاکہ آپ فوراً اپلوڈ کر سکیں اور پہلا قدم شروع کریں؟
     </div>
