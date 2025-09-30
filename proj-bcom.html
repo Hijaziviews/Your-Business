@@ -17,6 +17,8 @@
       max-width: 900px;
       margin: 32px auto;
       padding: 0 18px;
+      font-size: 2em; /* Increased font size by about 6pt */
+      line-height: 1.8;
     }
     .question {
       background: #fef3c7;
@@ -24,9 +26,10 @@
       border-radius: 9px;
       padding: 18px 18px 10px 18px;
       margin-bottom: 18px;
-      font-size: 1.23em;
+      font-size: 1.07em;
       color: #a16207;
       box-shadow: 0 2px 10px #ffeaa033;
+      position: relative;
     }
     .section {
       background: #ecfdf5;
@@ -34,9 +37,10 @@
       border-radius: 9px;
       padding: 18px 18px 10px 18px;
       margin-bottom: 18px;
-      font-size: 1.13em;
+      font-size: 0.97em;
       color: #065f46;
       box-shadow: 0 2px 10px #b7f9e033;
+      position: relative;
     }
     .plan {
       background: #f1f5f9;
@@ -44,17 +48,16 @@
       border-radius: 9px;
       padding: 18px 18px 10px 18px;
       margin-bottom: 18px;
-      font-size: 1.13em;
+      font-size: 0.97em;
       color: #1e293b;
       box-shadow: 0 2px 10px #c7dafe33;
+      position: relative;
     }
     ul, ol {
       margin-right: 24px;
       margin-bottom: 12px;
     }
-    li {
-      margin-bottom: 7px;
-    }
+    li { margin-bottom: 7px; }
     hr {
       border: none;
       border-top: 1px solid #e5e7eb;
@@ -66,10 +69,11 @@
       border-radius: 9px;
       padding: 18px;
       margin-top: 28px;
-      font-size: 1.13em;
+      font-size: 0.97em;
       color: #b45309;
       box-shadow: 0 2px 10px #fed7aa33;
       text-align: right;
+      position: relative;
     }
     .summary {
       margin-top: 0;
@@ -88,12 +92,22 @@
       color: #166534;
       box-shadow: 0 2px 10px #bbf7d033;
       direction: rtl;
+      position: relative;
     }
     .gig-title {
       font-weight: bold;
       color: #0d9488;
       margin-bottom: 6px;
       display: block;
+    }
+    .sketch {
+      display: block;
+      margin: 36px auto 30px auto;
+      opacity: 0.22;
+      max-width: 180px;
+      width: 90%;
+      min-width: 120px;
+      height: auto;
     }
     .back-link {
       display: block;
@@ -108,8 +122,9 @@
     }
     .back-link:hover { color: #3982e9; }
     @media (max-width: 600px) {
-      .container { padding: 0 2vw; }
+      .container { padding: 0 2vw; font-size: 1.1em;}
       .question, .section, .plan, .summary, .tips, .gigs { font-size: 1em; padding: 13px 7px 7px 7px;}
+      .sketch { max-width: 110px; min-width: 60px;}
     }
   </style>
 </head>
@@ -118,6 +133,19 @@
     <div class="question">
       "جناب AI صاحب! میں نے بی کام کیا ہے مگر مجھے کہیں ملازمت نہیں مل رہی۔ میں کس طرح AI کو استعمال کر کے ماہانہ دو لاکھ روپے کما سکتا ہوں؟ کیا آپ میری رہنمائی کر سکتے ہیں؟"
     </div>
+
+    <!-- SKETCH 1: Calculator & Business -->
+    <span class="sketch">
+      <svg viewBox="0 0 110 60" fill="none">
+        <rect x="10" y="10" width="38" height="40" rx="7" stroke="#a16207" stroke-width="3" fill="#fffbe9"/>
+        <rect x="60" y="12" width="38" height="18" rx="5" stroke="#fbbf24" stroke-width="2.3" fill="#fff"/>
+        <rect x="60" y="34" width="38" height="16" rx="5" stroke="#fb923c" stroke-width="2.3" fill="#fff"/>
+        <circle cx="29" cy="38" r="4" fill="#fbbf24"/>
+        <rect x="21" y="18" width="12" height="6" rx="2" stroke="#10b981" stroke-width="1.2" fill="#fff"/>
+        <rect x="21" y="27" width="12" height="6" rx="2" stroke="#10b981" stroke-width="1.2" fill="#fff"/>
+      </svg>
+    </span>
+
     <div class="section">
       ✅ <strong>تفصیلی جواب (سادہ زبان میں)</strong><br>
       آپ نے B.Com کیا ہے، اس کا مطلب ہے کہ آپ کو اکاؤنٹس، بزنس، اور فنانس کی بنیادی سمجھ ہے۔ یہ ایک بہت بڑی طاقت ہے۔ اب آپ اسے AI اور ChatGPT کے ساتھ ملا کر آمدنی کے کئی راستے بنا سکتے ہیں۔
@@ -152,6 +180,23 @@
             <li>فیس: فی شرکاء Rs 2,000–3,000۔ اگر 100 شرکاء مل جائیں تو آمدنی = Rs 200,000–300,000۔</li>
           </ul>
         </li>
+        <!-- SKETCH 2: Vector/Network AI -->
+        <span class="sketch">
+          <svg viewBox="0 0 130 60" fill="none">
+            <circle cx="30" cy="30" r="12" stroke="#2563eb" stroke-width="2.5"/>
+            <circle cx="100" cy="30" r="12" stroke="#10b981" stroke-width="2.5"/>
+            <circle cx="65" cy="15" r="7" stroke="#fb923c" stroke-width="2.2"/>
+            <circle cx="65" cy="45" r="7" stroke="#bfa47a" stroke-width="2.2"/>
+            <line x1="42" y1="30" x2="58" y2="15" stroke="#a16207" stroke-width="1.7"/>
+            <line x1="88" y1="30" x2="72" y2="15" stroke="#a16207" stroke-width="1.7"/>
+            <line x1="42" y1="30" x2="58" y2="45" stroke="#a16207" stroke-width="1.7"/>
+            <line x1="88" y1="30" x2="72" y2="45" stroke="#a16207" stroke-width="1.7"/>
+            <line x1="30" y1="30" x2="65" y2="15" stroke="#2563eb" stroke-width="1.3"/>
+            <line x1="100" y1="30" x2="65" y2="15" stroke="#10b981" stroke-width="1.3"/>
+            <line x1="30" y1="30" x2="65" y2="45" stroke="#2563eb" stroke-width="1.3"/>
+            <line x1="100" y1="30" x2="65" y2="45" stroke="#10b981" stroke-width="1.3"/>
+          </svg>
+        </span>
         <li>
           <strong>🔹 راستہ 5: یوٹیوب / بلاگ (Passive Income)</strong>
           <ul>
@@ -161,6 +206,20 @@
         </li>
       </ul>
     </div>
+
+    <!-- SKETCH 3: Space - Satellite -->
+    <span class="sketch">
+      <svg viewBox="0 0 110 70" fill="none">
+        <circle cx="55" cy="35" r="26" stroke="#e6c16b" stroke-width="2.7"/>
+        <rect x="20" y="30" width="18" height="10" rx="2" stroke="#2563eb" stroke-width="2" fill="#fff"/>
+        <rect x="72" y="30" width="18" height="10" rx="2" stroke="#10b981" stroke-width="2" fill="#fff"/>
+        <rect x="48" y="15" width="14" height="14" rx="2" stroke="#fb923c" stroke-width="2" fill="#fff"/>
+        <rect x="48" y="41" width="14" height="14" rx="2" stroke="#bfa47a" stroke-width="2" fill="#fff"/>
+        <line x1="55" y1="15" x2="55" y2="55" stroke="#a16207" stroke-width="1.6"/>
+        <line x1="20" y1="35" x2="90" y2="35" stroke="#a16207" stroke-width="1.6"/>
+      </svg>
+    </span>
+
     <div class="plan">
       <strong>📌 عملی منصوبہ (Step by Step)</strong>
       <ul>
@@ -198,6 +257,17 @@
         </li>
       </ul>
     </div>
+
+    <!-- SKETCH 4: Education - Graduation Cap -->
+    <span class="sketch">
+      <svg viewBox="0 0 130 60" fill="none">
+        <rect x="20" y="25" width="90" height="18" rx="6" stroke="#bfa47a" stroke-width="2.8" fill="#fff"/>
+        <path d="M65 14 L110 25 L65 36 L20 25 Z" stroke="#2563eb" stroke-width="2.2" fill="#f3e9da"/>
+        <rect x="58" y="37" width="14" height="7" rx="1.7" stroke="#bfa47a" stroke-width="1.1" fill="#fff"/>
+        <rect x="62" y="44" width="6" height="6" rx="2" stroke="#bfa47a" stroke-width="0.5" fill="#fff"/>
+      </svg>
+    </span>
+
     <div class="summary">
       <strong>💰 ممکنہ آمدنی (ماہانہ)</strong><br>
       Freelancing (اکاؤنٹنگ + رپورٹس): Rs 100,000<br>
