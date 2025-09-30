@@ -28,30 +28,29 @@
       min-width: 260px;
       max-width: 350px;
       border-radius: 26px 26px 56px 26px;
-      box-shadow: 0 4px 32px #b7f9e033, 0 1px 2px #0001;
+      box-shadow: 0 4px 36px #b7f9e033, 0 1px 2px #0001;
       padding: 38px 24px 38px 24px;
-      font-size: 1.28em;
+      font-size: 2em;
       border: none;
       outline: none;
       cursor: pointer;
       margin-bottom: 0;
       text-align: right;
       position: relative;
-      transition: box-shadow 0.16s, transform 0.14s;
+      transition: box-shadow 0.26s, transform 0.14s;
       background: #fff;
       overflow: hidden;
       white-space: pre-line;
     }
     .ai-box:hover {
-      box-shadow: 0 8px 38px #b7f9e077, 0 2px 8px #0002;
+      box-shadow: 0 8px 48px #b7f9e077, 0 2px 8px #0002;
       transform: translateY(-5px) scale(1.03);
       z-index: 2;
     }
-    /* Box background colors */
     .green { background: linear-gradient(100deg, #e4fbe6 60%, #c6ece5 100%);}
     .brown { background: linear-gradient(100deg, #f7f5ee 60%, #f3e9da 100%);}
     .yellow { background: linear-gradient(100deg, #fffde4 60%, #fff6c9 100%);}
-    /* SVG sketch styling */
+    .purple { background: linear-gradient(100deg, #f8f6ff 60%, #e9e6fa 100%);}
     .sketch {
       position: absolute;
       left: 16px;
@@ -61,14 +60,13 @@
       opacity: 0.28;
       pointer-events: none;
     }
-    /* Responsive */
     @media (max-width: 900px) {
       .container { flex-direction: column; gap: 22px; }
       .ai-box { max-width: 98vw; min-width: 0; }
     }
     @media (max-width: 600px) {
       .container { padding: 0 4vw; }
-      .ai-box { font-size: 1.05em; padding: 22px 9px 38px 9px;}
+      .ai-box { font-size: 1.3em; padding: 22px 9px 38px 9px;}
       .sketch { left: 8px; width: 44px; height: 44px;}
     }
   </style>
@@ -102,6 +100,21 @@
       <span class="sketch">
         <!-- Rocket SVG -->
         <svg viewBox="0 0 54 54" fill="none"><path d="M27 44 L40 24 Q34 16 27 10 Q20 16 14 24 L27 44 Z" stroke="#e6c16b" stroke-width="2.3"/><circle cx="27" cy="18" r="3.2" stroke="#e6c16b" stroke-width="1.7"/></svg>
+      </span>
+    </button>
+    <!-- Box 4 -->
+    <button class="ai-box purple" onclick="window.location.href='more-projects.html'">
+      مزید پروجیکٹس<br>
+      Project 8, Project 9, Project 10, Project 11, Project 12, More Projects
+      <span class="sketch">
+        <!-- Space/Science SVG Sketch -->
+        <svg viewBox="0 0 56 56" fill="none">
+          <circle cx="28" cy="28" r="24" stroke="#a78bfa" stroke-width="2.7"/>
+          <ellipse cx="28" cy="28" rx="12" ry="24" stroke="#7dd87f" stroke-width="2"/>
+          <ellipse cx="28" cy="28" rx="24" ry="6" stroke="#e6c16b" stroke-width="1.2"/>
+          <circle cx="46" cy="28" r="2.5" fill="#bfa47a"/>
+          <circle cx="10" cy="28" r="2.5" fill="#fb923c"/>
+        </svg>
       </span>
     </button>
   </div>
