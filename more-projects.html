@@ -6,125 +6,103 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      background: linear-gradient(120deg, #e8fdf5 0%, #f8f6ff 100%);
+      background: linear-gradient(135deg, #e8fdf5 0%, #fffbe9 100%);
       font-family: 'Segoe UI', Arial, 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', sans-serif;
       margin: 0;
       direction: rtl;
       color: #28313f;
-      min-height: 100vh;
-      position: relative;
+      font-size: 2em;
     }
     .container {
-      max-width: 960px;
-      margin: 48px auto 0 auto;
-      padding: 0 24px;
+      max-width: 1200px;
+      margin: 44px auto 0 auto;
+      padding: 0 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      position: relative;
+      min-height: 90vh;
     }
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-      gap: 34px 30px;
+    .big-sketch {
+      margin: 0 0 36px 0;
+      width: 350px;
+      max-width: 80vw;
+      height: auto;
+      display: block;
+      opacity: 0.23;
+    }
+    .button-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 38px 32px;
       width: 100%;
-      margin: 56px 0 36px 0;
     }
-    .project-btn {
-      background: linear-gradient(100deg, #fcf5e9 60%, #e6fbe8 100%);
+    .ai-box {
+      min-width: 260px;
+      max-width: 340px;
+      border-radius: 32px 32px 56px 32px;
+      box-shadow: 0 14px 48px #b7f9e0cc, 0 3px 14px #0002;
+      font-size: 1.12em;
       border: none;
-      border-radius: 24px 48px 24px 48px;
-      box-shadow: 0 2px 16px #b7f9e033, 0 1px 2px #0001;
-      font-size: 1.33em;
-      font-weight: bold;
-      color: #363a43;
-      padding: 34px 8px;
-      cursor: pointer;
       outline: none;
-      transition: box-shadow 0.18s, transform 0.14s;
-      min-width: 160px;
-      min-height: 70px;
-      margin: 0 auto;
-      text-align: center;
+      cursor: pointer;
+      text-align: right;
+      position: relative;
+      transition: box-shadow 0.18s, transform 0.12s;
+      background: #fff;
+      padding: 44px 18px 44px 18px;
+      font-weight: bold;
+      margin-bottom: 0;
+      margin-top: 0;
+      white-space: pre-line;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      z-index: 5;
     }
-    .project-btn:hover {
-      box-shadow: 0 6px 30px #a7e3f077, 0 2px 8px #0002;
-      transform: translateY(-4px) scale(1.04);
-      z-index: 2;
+    .ai-box:hover {
+      box-shadow: 0 22px 70px #a7e3f099, 0 12px 44px #0002;
+      transform: translateY(-7px) scale(1.04);
+      z-index: 7;
     }
-    /* Surrounding sketches */
-    .sketch-top-left, .sketch-top-right, .sketch-bottom-left, .sketch-bottom-right {
+    .green { background: linear-gradient(120deg, #e4fbe6 60%, #c6ece5 100%);}
+    .brown { background: linear-gradient(120deg, #f7f5ee 60%, #f3e9da 100%);}
+    .yellow { background: linear-gradient(120deg, #fffde4 60%, #fff6c9 100%);}
+    .purple { background: linear-gradient(120deg, #f8f6ff 60%, #e9e6fa 100%);}
+    .blue { background: linear-gradient(120deg, #e6f0fb 60%, #dbeafe 100%);}
+    .orange { background: linear-gradient(120deg, #fff2e4 60%, #ffe9c9 100%);}
+    .sketch {
       position: absolute;
-      width: 120px;
-      height: 90px;
-      opacity: 0.22;
-      z-index: 0;
+      left: 22px;
+      bottom: 16px;
+      width: 58px;
+      height: 58px;
+      opacity: 0.32;
       pointer-events: none;
     }
-    .sketch-top-left { top: -18px; left: -8px;}
-    .sketch-top-right { top: -18px; right: -8px;}
-    .sketch-bottom-left { bottom: -14px; left: -10px;}
-    .sketch-bottom-right { bottom: -14px; right: -10px;}
-    @media (max-width: 600px) {
-      .container { padding: 0 1vw;}
-      .projects-grid { gap: 19px 7px; }
-      .sketch-top-left, .sketch-top-right, .sketch-bottom-left, .sketch-bottom-right {
-        width: 62px; height: 44px;
-      }
+    .more-projects-link {
+      text-align: center;
+      margin: 54px 0 28px 0;
     }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <!-- Decorative SVG sketches in corners -->
-    <span class="sketch-top-left">
-      <!-- Computer/AI chip -->
-      <svg viewBox="0 0 120 90" fill="none">
-        <rect x="22" y="20" width="76" height="48" rx="12" stroke="#2563eb" stroke-width="3.5" fill="#fff"/>
-        <rect x="46" y="36" width="28" height="18" rx="5" stroke="#10b981" stroke-width="2.4" fill="#fffbe9"/>
-        <rect x="10" y="40" width="8" height="16" rx="3" stroke="#e6c16b" stroke-width="1.5" fill="#f3e9da"/>
-        <rect x="102" y="40" width="8" height="16" rx="3" stroke="#fb923c" stroke-width="1.4" fill="#f3e9da"/>
-      </svg>
-    </span>
-    <span class="sketch-top-right">
-      <!-- Book & Cap (Education) -->
-      <svg viewBox="0 0 120 90" fill="none">
-        <rect x="12" y="60" width="96" height="16" rx="7" stroke="#bfa47a" stroke-width="2.7" fill="#fff"/>
-        <path d="M60 18 L104 60 L60 78 L16 60 Z" stroke="#a78bfa" stroke-width="2.2" fill="#f7f5ee"/>
-        <rect x="52" y="78" width="16" height="8" rx="2" stroke="#bfa47a" stroke-width="1.1" fill="#fff"/>
-        <rect x="57" y="86" width="6" height="4" rx="1" stroke="#bfa47a" stroke-width="0.5" fill="#fff"/>
-      </svg>
-    </span>
-    <span class="sketch-bottom-left">
-      <!-- Atom/Science -->
-      <svg viewBox="0 0 120 90" fill="none">
-        <ellipse cx="60" cy="45" rx="38" ry="15" stroke="#2563eb" stroke-width="2.5"/>
-        <ellipse cx="60" cy="45" rx="15" ry="38" stroke="#10b981" stroke-width="2.5" transform="rotate(35 60 45)"/>
-        <ellipse cx="60" cy="45" rx="15" ry="38" stroke="#e6c16b" stroke-width="2.5" transform="rotate(-35 60 45)"/>
-        <circle cx="60" cy="45" r="7" fill="#bfa47a"/>
-        <circle cx="40" cy="45" r="3.5" fill="#2563eb"/>
-        <circle cx="80" cy="45" r="3.5" fill="#10b981"/>
-      </svg>
-    </span>
-    <span class="sketch-bottom-right">
-      <!-- Rocket/Space -->
-      <svg viewBox="0 0 120 90" fill="none">
-        <path d="M60 70 L90 30 Q75 15 60 10 Q45 15 30 30 L60 70 Z" stroke="#a78bfa" stroke-width="3" fill="none"/>
-        <circle cx="60" cy="25" r="7" stroke="#e6c16b" stroke-width="2.2" fill="#fffbe9"/>
-        <path d="M60 70 Q62 80 65 86" stroke="#fb923c" stroke-width="2"/>
-        <path d="M60 70 Q58 80 55 86" stroke="#fb923c" stroke-width="2"/>
-      </svg>
-    </span>
-    <!-- Main Buttons Grid -->
-    <div class="projects-grid">
-      <button class="project-btn" onclick="window.location.href='project8.html'">پروجیکٹ 8<br>Project 8</button>
-      <button class="project-btn" onclick="window.location.href='project9.html'">پروجیکٹ 9<br>Project 9</button>
-      <button class="project-btn" onclick="window.location.href='project10.html'">پروجیکٹ 10<br>Project 10</button>
-      <button class="project-btn" onclick="window.location.href='project11.html'">پروجیکٹ 11<br>Project 11</button>
-      <button class="project-btn" onclick="window.location.href='project12.html'">پروجیکٹ 12<br>Project 12</button>
-      <button class="project-btn" onclick="window.location.href='more-projects.html'">مزید پروجیکٹس<br>More Projects</button>
-    </div>
-    <a class="back-link" href="introduction.html">⟵ واپس تعارف صفحہ</a>
-  </div>
-</body>
-</html>
+    .more-projects-link a {
+      display: inline-block;
+      background: linear-gradient(100deg,#e4fbe6 60%,#a7e3f0 100%);
+      color: #2563eb;
+      font-size: 1.16em;
+      padding: 22px 64px;
+      border-radius: 32px 44px 32px 44px;
+      box-shadow: 0 10px 36px #b7f9e099, 0 2px 8px #0002;
+      text-decoration: none;
+      font-weight: bold;
+      transition: box-shadow 0.14s, transform 0.11s;
+      font-family: inherit;
+    }
+    .more-projects-link a:hover {
+      box-shadow: 0 18px 48px #a7e3f099, 0 2px 8px #0002;
+      background: linear-gradient(100deg,#a7e3f0 60%,#e4fbe6 100%);
+      transform: translateY(-4px) scale(1.03);
+    }
+    @media (max-width: 900px) {
+      .button-grid { gap: 18px 7vw; }
+      .ai-box { max-width: 96vw; min-width: 0; }
+      .
