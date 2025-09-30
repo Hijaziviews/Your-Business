@@ -42,12 +42,6 @@
       letter-spacing: 2px;
       font-family: inherit;
     }
-    .subtitle {
-      color: #2563eb;
-      font-size: 1.18em;
-      margin-bottom: 18px;
-      font-family: inherit;
-    }
     .statement {
       background: linear-gradient(110deg, #f8f6ff 65%, #e0fdf5 100%);
       border-radius: 38px 38px 68px 38px;
@@ -59,7 +53,7 @@
       text-align: center;
       color: #28313f;
     }
-    .main-btn {
+    .main-btn, .nav-btn {
       display: inline-block;
       background: linear-gradient(90deg,#e4fbe6 60%,#a7e3f0 100%);
       color: #2563eb;
@@ -71,14 +65,20 @@
       font-weight: bold;
       transition: box-shadow 0.14s, transform 0.11s;
       font-family: inherit;
-      margin-top: 32px;
-      margin-bottom: 30px;
+      margin: 16px 8px 30px 8px;
     }
-    .main-btn:hover {
+    .main-btn:hover, .nav-btn:hover {
       box-shadow: 0 16px 44px #a7e3f099, 0 2px 8px #0002;
       background: linear-gradient(90deg,#a7e3f0 60%,#e4fbe6 100%);
       transform: translateY(-4px) scale(1.03);
       color: #10b981;
+    }
+    .nav-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 10px;
     }
     @media (max-width: 900px) {
       .sketch { width: 99vw; }
@@ -91,7 +91,7 @@
       .sketch { width: 100vw;}
       .main-title { font-size: 1.2em; }
       .statement { padding: 8px 2vw 12px 2vw;}
-      .main-btn { font-size: 1em; padding: 14px 10vw;}
+      .main-btn, .nav-btn { font-size: 1em; padding: 14px 10vw;}
     }
   </style>
 </head>
@@ -109,7 +109,10 @@
       <br>
       آپ کی زندگی، آپ کی آمدنی اور آپ کے شوق کو بدلنے کے لیے
     </div>
-    <a href="registration.html" class="main-btn">رجسٹریشن صفحہ</a>
+    <div class="nav-row">
+      <a href="registration.html" class="main-btn">رجسٹریشن صفحہ</a>
+      <a href="more-projects.html" class="nav-btn">پروجیکٹس دیکھیں</a>
+    </div>
   </div>
   <!-- Decorative SVG at the very bottom for extra color -->
   <svg width="100%" height="80" viewBox="0 0 800 80" fill="none" style="position:fixed;left:0;bottom:0;z-index:-1;" xmlns="http://www.w3.org/2000/svg">
