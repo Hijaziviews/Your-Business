@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <meta charset="UTF-8">
+  <title>مصنوعی ذہانت – نیا آغاز</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: linear-gradient(135deg, #e8fdf5 0%, #fffbe9 100%);
+      font-family: 'Segoe UI', Arial, 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', sans-serif;
+      margin: 0;
+      direction: rtl;
+      color: #28313f;
+    }
+    .container {
+      max-width: 950px;
+      margin: 44px auto 0 auto;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 36px 24px;
+      min-height: 90vh;
+    }
+    .ai-box {
+      flex: 1 1 260px;
+      min-width: 260px;
+      max-width: 350px;
+      border-radius: 26px 26px 56px 26px;
+      box-shadow: 0 4px 32px #b7f9e033, 0 1px 2px #0001;
+      padding: 38px 24px 38px 24px;
+      font-size: 1.28em;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      margin-bottom: 0;
+      text-align: right;
+      position: relative;
+      transition: box-shadow 0.16s, transform 0.14s;
+      background: #fff;
+      overflow: hidden;
+      white-space: pre-line;
+    }
+    .ai-box:hover {
+      box-shadow: 0 8px 38px #b7f9e077, 0 2px 8px #0002;
+      transform: translateY(-5px) scale(1.03);
+      z-index: 2;
+    }
+    /* Box background colors */
+    .green { background: linear-gradient(100deg, #e4fbe6 60%, #c6ece5 100%);}
+    .brown { background: linear-gradient(100deg, #f7f5ee 60%, #f3e9da 100%);}
+    .yellow { background: linear-gradient(100deg, #fffde4 60%, #fff6c9 100%);}
+    .purple { background: linear-gradient(100deg, #f8f6ff 60%, #e9e6fa 100%);}
+    /* SVG sketch styling */
+    .sketch {
+      position: absolute;
+      left: 16px;
+      bottom: 12px;
+      width: 64px;
+      height: 64px;
+      opacity: 0.28;
+      pointer-events: none;
+    }
+    /* Responsive */
+    @media (max-width: 900px) {
+      .container { flex-direction: column; gap: 22px; }
+      .ai-box { max-width: 98vw; min-width: 0; }
+    }
+    @media (max-width: 600px) {
+      .container { padding: 0 4vw; }
+      .ai-box { font-size: 1.05em; padding: 22px 9px 38px 9px;}
+      .sketch { left: 8px; width: 44px; height: 44px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Box 1 -->
+    <button class="ai-box green" onclick="window.location.href='ai-intro-1.html'">
+      مصنوعی ذہانت 
+آپ سے زیادہ ذہین
+ نہیں ہو سکتی،
+ لیکن اسے کی ضرورت ہے کہ آئیں اور ہمارے ساتھ مشق کریں۔
+      <span class="sketch">
+        <!-- Bulb SVG -->
+        <svg viewBox="0 0 54 54" fill="none"><ellipse cx="27" cy="27" rx="20" ry="22" stroke="#7dd87f" stroke-width="2.7"/><path d="M27 44v6" stroke="#7dd87f" stroke-width="2.2" stroke-linecap="round"/><ellipse cx="27" cy="52" rx="3.8" ry="2" stroke="#7dd87f" stroke-width="1.6"/></svg>
+      </span>
+    </button>
+    <!-- Box 2 -->
+    <button class="ai-box brown" onclick="window.location.href='ai-intro-2.html'">
+      یہ ویب سائٹ آپ کی مدد کے لیے ہے تاکہ آپ مصنوعی ذہانت کا آغاز کریں،
+ اسے کر کے سیکھیں — سیکھنے کا ایک نیا طریقہ: "عمل کے ذریعے سیکھنا"
+      <span class="sketch">
+        <!-- Book SVG -->
+        <svg viewBox="0 0 54 54" fill="none"><rect x="8" y="10" width="38" height="34" rx="6" stroke="#bfa47a" stroke-width="2.3"/><path d="M27 10v34" stroke="#bfa47a" stroke-width="2.1"/><path d="M8 18h38" stroke="#bfa47a" stroke-width="1.6"/></svg>
+      </span>
+    </button>
+    <!-- Box 3 -->
+    <button class="ai-box yellow" onclick="window.location.href='ai-intro-3.html'">
+      مصنوعی ذہانت:
+ آپ کی زندگی، آپ کی آمدنی اور آپ کے شوق کو بدلنے کے لیے
+      <span class="sketch">
+        <!-- Rocket SVG -->
+        <svg viewBox="0 0 54 54" fill="none"><path d="M27 44 L40 24 Q34 16 27 10 Q20 16 14 24 L27 44 Z" stroke="#e6c16b" stroke-width="2.3"/><circle cx="27" cy="18" r="3.2" stroke="#e6c16b" stroke-width="1.7"/></svg>
+      </span>
+    </button>
+    <!-- Example for a 4th box (purple) if you want to add later
+    <button class="ai-box purple" onclick="window.location.href='ai-intro-4.html'">
+      [چوتھا جملہ یہاں]
+      <span class="sketch">
+        <svg viewBox="0 0 54 54" fill="none"><circle cx="27" cy="27" r="20" stroke="#a78bfa" stroke-width="2.7"/><path d="M27 17v20" stroke="#a78bfa" stroke-width="2.2" stroke-linecap="round"/></svg>
+      </span>
+    </button>
+    -->
+  </div>
+</body>
+</html>
