@@ -1,124 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ur">
 <head>
   <meta charset="UTF-8">
-  <title>AI in Urdu & English - Home</title>
+  <title>مصنوعی ذہانت – نیا آغاز</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      margin: 0; padding: 0;
-      background: #f1f5fa;
-      font-family: 'Segoe UI', 'Arial', sans-serif;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-    .top-section {
-      background: linear-gradient(90deg, #375fa9, #377fa9 80%);
-      color: #fff;
-      padding: 54px 16px 46px 16px;
-      text-align: center;
-      border-bottom-left-radius: 32px;
-      border-bottom-right-radius: 32px;
-      box-shadow: 0 8px 24px #b3c2e366;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 48px;
-    }
-    .intro-english {
-      font-size: 2.2em;
-      font-weight: bold;
-      letter-spacing: 1px;
-      margin-bottom: 0.7em;
-      margin-top: 0;
-      line-height: 1.2;
-      max-width: 700px;
-    }
-    .intro-urdu {
-      font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", "Tahoma", "Arial", sans-serif;
-      font-size: 2.1em;
-      color: #e7f0fa;
-      margin-bottom: 0.7em;
-      margin-top: 0;
-      line-height: 1.4;
+      background: linear-gradient(135deg, #e8fdf5 0%, #fffbe9 100%);
+      font-family: 'Segoe UI', Arial, 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', sans-serif;
+      margin: 0;
       direction: rtl;
-      max-width: 750px;
+      color: #28313f;
     }
-    .urdu-note {
-      font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", "Tahoma", "Arial", sans-serif;
-      font-size: 1.3em;
-      color: #f0f7ff;
-      margin-top: 1.2em;
-      direction: rtl;
-      max-width: 700px;
-    }
-    .tiles-container {
+    .container {
+      max-width: 950px;
+      margin: 44px auto 0 auto;
+      padding: 0 20px;
       display: flex;
-      gap: 32px;
-      justify-content: center;
-      margin-top: 64px;
       flex-wrap: wrap;
-    }
-    .tile {
-      background: #fff;
-      border-radius: 18px;
-      box-shadow: 0 4px 18px #b3c2e3;
-      width: 210px;
-      height: 140px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
-      text-align: center;
-      font-size: 1.18em;
-      color: #27578a;
-      text-decoration: none;
-      transition: transform 0.12s, box-shadow 0.12s;
+      align-items: flex-start;
+      gap: 36px 24px;
+      min-height: 90vh;
+    }
+    .ai-box {
+      flex: 1 1 260px;
+      min-width: 260px;
+      max-width: 350px;
+      border-radius: 26px 26px 56px 26px;
+      box-shadow: 0 4px 32px #b7f9e033, 0 1px 2px #0001;
+      padding: 38px 24px 38px 24px;
+      font-size: 1.28em;
+      border: none;
+      outline: none;
       cursor: pointer;
-      border: 2px solid #e4e9f3;
+      margin-bottom: 0;
+      text-align: right;
+      position: relative;
+      transition: box-shadow 0.16s, transform 0.14s;
+      background: #fff;
+      overflow: hidden;
+      white-space: pre-line;
     }
-    .tile:hover {
-      transform: translateY(-6px) scale(1.03);
-      box-shadow: 0 8px 32px #86a7db;
-      background: #f8fbff;
-      border: 2px solid #b8d2f6;
+    .ai-box:hover {
+      box-shadow: 0 8px 38px #b7f9e077, 0 2px 8px #0002;
+      transform: translateY(-5px) scale(1.03);
+      z-index: 2;
     }
-    .urdu-title {
-      font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", "Tahoma", "Arial", sans-serif;
-      font-size: 1em;
-      color: #0e5a6d;
-      margin-top: 7px;
+    /* Box background colors */
+    .green { background: linear-gradient(100deg, #e4fbe6 60%, #c6ece5 100%);}
+    .brown { background: linear-gradient(100deg, #f7f5ee 60%, #f3e9da 100%);}
+    .yellow { background: linear-gradient(100deg, #fffde4 60%, #fff6c9 100%);}
+    .purple { background: linear-gradient(100deg, #f8f6ff 60%, #e9e6fa 100%);}
+    /* SVG sketch styling */
+    .sketch {
+      position: absolute;
+      left: 16px;
+      bottom: 12px;
+      width: 64px;
+      height: 64px;
+      opacity: 0.28;
+      pointer-events: none;
     }
-    @media (max-width: 700px) {
-      .tiles-container { gap: 12vw; margin-top: 36px; }
-      .tile { width: 42vw; min-width: 120px; height: 95px; font-size: 1em; }
-      .top-section { gap: 32px; padding: 36px 2vw 24px 2vw; }
-      .intro-english, .intro-urdu { font-size: 1.2em; }
+    /* Responsive */
+    @media (max-width: 900px) {
+      .container { flex-direction: column; gap: 22px; }
+      .ai-box { max-width: 98vw; min-width: 0; }
+    }
+    @media (max-width: 600px) {
+      .container { padding: 0 4vw; }
+      .ai-box { font-size: 1.05em; padding: 22px 9px 38px 9px;}
+      .sketch { left: 8px; width: 44px; height: 44px;}
     }
   </style>
 </head>
 <body>
-  <div class="top-section">
-    <div class="intro-english">
-      Need high income? <br>Join the family of AI
-    </div>
-    <div class="intro-urdu">
-      AI اگر آپ کو زیادہ کمانا ہے، تو آئیے کی فیملی میں شامل ہو جائیں
-    </div>
-    <div class="urdu-note">
-      اگر آپ کے پاس نوکری نہیں ہے، تو یہی وقت ہے خوشحال مستقبل کی شروعات کرنے کا
-    </div>
-  </div>
-  <div class="tiles-container">
-    <a class="tile" href="registration.html">
-      Registration<br>
-      <span class="urdu-title">رجسٹریشن</span>
-    </a>
-    <a class="tile" href="AI-intro-urdu.html">
-      Introduction<br>
-      <span class="urdu-title">تعارف</span>
-    </a>
+  <div class="container">
+    <!-- Box 1 -->
+    <button class="ai-box green" onclick="window.location.href='proj-class6.html'">
+      مصنوعی ذہانت 
+آپ سے زیادہ ذہین
+ نہیں ہو سکتی،
+ لیکن اسے کی ضرورت ہے کہ آئیں اور ہمارے ساتھ مشق کریں۔
+      <span class="sketch">
+        <!-- Bulb SVG -->
+        <svg viewBox="0 0 54 54" fill="none"><ellipse cx="27" cy="27" rx="20" ry="22" stroke="#7dd87f" stroke-width="2.7"/><path d="M27 44v6" stroke="#7dd87f" stroke-width="2.2" stroke-linecap="round"/><ellipse cx="27" cy="52" rx="3.8" ry="2" stroke="#7dd87f" stroke-width="1.6"/></svg>
+      </span>
+    </button>
+    <!-- Box 2 -->
+    <button class="ai-box brown" onclick="window.location.href='proj-bcom.html'">
+      یہ ویب سائٹ آپ کی مدد کے لیے ہے تاکہ آپ مصنوعی ذہانت کا آغاز کریں،
+ اسے کر کے سیکھیں — سیکھنے کا ایک نیا طریقہ: "عمل کے ذریعے سیکھنا"
+      <span class="sketch">
+        <!-- Book SVG -->
+        <svg viewBox="0 0 54 54" fill="none"><rect x="8" y="10" width="38" height="34" rx="6" stroke="#bfa47a" stroke-width="2.3"/><path d="M27 10v34" stroke="#bfa47a" stroke-width="2.1"/><path d="M8 18h38" stroke="#bfa47a" stroke-width="1.6"/></svg>
+      </span>
+    </button>
+    <!-- Box 3 -->
+    <button class="ai-box yellow" onclick="window.location.href='proj-class-10.html'">
+      مصنوعی ذہانت:
+ آپ کی زندگی، آپ کی آمدنی اور آپ کے شوق کو بدلنے کے لیے
+      <span class="sketch">
+        <!-- Rocket SVG -->
+        <svg viewBox="0 0 54 54" fill="none"><path d="M27 44 L40 24 Q34 16 27 10 Q20 16 14 24 L27 44 Z" stroke="#e6c16b" stroke-width="2.3"/><circle cx="27" cy="18" r="3.2" stroke="#e6c16b" stroke-width="1.7"/></svg>
+      </span>
+    </button>
   </div>
 </body>
 </html>
