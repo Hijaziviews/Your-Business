@@ -1,180 +1,92 @@
 <!DOCTYPE html>
-<html lang="ur">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>رئیل اسٹیٹ اور AI – ماہانہ 2 لاکھ+ کی گائیڈ</title>
+  <title>Project 18: Creative Student Activity</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      background: #f7fafc;
-      font-family: 'Segoe UI', Arial, 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', sans-serif;
+      background: linear-gradient(120deg, #f3e8ff 0%, #e0f7fa 100%);
+      font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
-      direction: rtl;
-      color: #28313f;
+      padding: 0;
       min-height: 100vh;
+      color: #1a202c;
     }
     .container {
-      max-width: 900px;
-      margin: 32px auto;
-      padding: 0 18px;
-    }
-    .question {
-      background: #fef3c7;
-      border-right: 7px solid #fbbf24;
-      border-radius: 9px;
-      padding: 18px 18px 10px 18px;
-      margin-bottom: 18px;
-      font-size: 1.23em;
-      color: #a16207;
-      box-shadow: 0 2px 10px #ffeaa033;
-    }
-    .section {
-      background: #ecfdf5;
-      border-right: 7px solid #10b981;
-      border-radius: 9px;
-      padding: 18px 18px 10px 18px;
-      margin-bottom: 18px;
-      font-size: 1.13em;
-      color: #065f46;
-      box-shadow: 0 2px 10px #b7f9e033;
-    }
-    .plan {
-      background: #f1f5f9;
-      border-right: 7px solid #2563eb;
-      border-radius: 9px;
-      padding: 18px 18px 10px 18px;
-      margin-bottom: 18px;
-      font-size: 1.13em;
-      color: #1e293b;
-      box-shadow: 0 2px 10px #c7dafe33;
-    }
-    ul, ol {
-      margin-right: 24px;
-      margin-bottom: 12px;
-    }
-    li { margin-bottom: 7px; }
-    hr {
-      border: none;
-      border-top: 1px solid #e5e7eb;
-      margin: 18px 0;
-    }
-    .summary {
-      background: #fff7ed;
-      border-right: 7px solid #fb923c;
-      border-radius: 9px;
-      padding: 18px;
-      margin-top: 28px;
-      font-size: 1.13em;
-      color: #b45309;
-      box-shadow: 0 2px 10px #fed7aa33;
-      text-align: right;
-    }
-    .back-link {
-      display: block;
-      margin: 34px auto 0 auto;
+      max-width: 500px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 8px 32px #b7f9e066, 0 2px 8px #0001;
+      padding: 32px 16px 24px 16px;
       text-align: center;
-      font-size: 1em;
-      color: #2357ad;
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.14s;
-      max-width: 320px;
     }
-    .back-link:hover { color: #3982e9; }
-    @media (max-width: 600px) {
-      .container { padding: 0 2vw; }
-      .question, .section, .plan, .summary { font-size: 1em; padding: 13px 7px 7px 7px;}
+    .title {
+      font-size: 2em;
+      color: #a21caf;
+      margin-bottom: 18px;
+      font-weight: bold;
+    }
+    .desc {
+      color: #28313f;
+      font-size: 1.13em;
+      margin-bottom: 22px;
+      line-height: 1.7;
+    }
+    .student-img {
+      width: 180px;
+      max-width: 100%;
+      margin: 0 auto 22px auto;
+      display: block;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px #a78bfa33;
+    }
+    .nav-row {
+      margin-top: 28px;
+      text-align: center;
+    }
+    .nav-btn {
+      display: inline-block;
+      background: linear-gradient(100deg,#f3e8ff 60%,#a78bfa 100%);
+      color: #1e293b;
+      font-size: 1em;
+      padding: 10px 32px;
+      border-radius: 16px 28px 16px 28px;
+      box-shadow: 0 5px 18px #a78bfa66, 0 2px 8px #0002;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 8px;
+      transition: box-shadow 0.14s, transform 0.11s;
+      font-family: inherit;
+    }
+    .nav-btn:hover {
+      background: linear-gradient(100deg,#a78bfa 60%,#f3e8ff 100%);
+      color: #fff;
+      box-shadow: 0 10px 24px #a78bfa88, 0 2px 8px #0002;
+      transform: translateY(-2px) scale(1.03);
+    }
+    @media (max-width: 540px) {
+      .container { padding: 10px 2vw 14px 2vw; }
+      .title { font-size: 1.2em; }
+      .desc { font-size: 1em; }
+      .nav-btn { font-size: 0.98em; padding: 8px 4vw; }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="question">
-      بہت اچھا سوال عالم صاحب 🌸۔ آپ کی تعلیم گیارہویں جماعت تک ہے اور آپ نے پراپرٹی ڈیلر / رئیل اسٹیٹ ایجنٹ کے ساتھ کام کیا ہے۔ یہ تجربہ آپ کے لیے قیمتی ہے کیونکہ آپ کو مارکیٹ، گاہکوں اور سودے بازی کا علم ہے۔ اب آئیے دیکھتے ہیں کہ آپ AI اور ChatGPT کے ذریعے کتنا کما سکتے ہیں اور کس طرح اپنی خود کی رئیل اسٹیٹ وینچر شروع کر سکتے ہیں۔
+    <div class="title">Project 18: Creative Student Activity</div>
+    <div class="desc">
+      This project features a creative scene of a young student sitting at a desk, engaged in an artistic activity. The student has curly hair, wears a collared shirt with a bow, and is drawing or painting using a pencil and a rectangular palette. A sheet of paper lies on the table, indicating focus and imagination at work. <br><br>
+      Such activities encourage artistic expression, concentration, and joy in learning. Perfect for coloring, teaching about art, or simply inspiring creativity in the classroom or at home.
     </div>
-    <div class="section">
-      ✅ <strong>AI سے رئیل اسٹیٹ میں مواقع</strong>
-      <ul>
-        <li>
-          <strong>🔹 1. اپنی ایجنسی/وینچر کو ڈیجیٹل بنانا</strong><br>
-          ChatGPT کی مدد سے آپ پراپرٹی کے ایڈز، بروشرز، اور پوسٹنگز خودکار بنا سکتے ہیں۔<br>
-          WhatsApp Business پر کیٹلاگ بنائیں: ہر گھر/پلاٹ کی تصویر + ChatGPT سے تیار کردہ وضاحت۔<br>
-          Facebook Marketplace اور OLX پر پوسٹ کریں، کیپشنز ChatGPT لکھے گا۔<br>
-          <b>ممکنہ آمدنی:</b> اگر آپ مہینے میں صرف 2–3 ڈیلز مکمل کرتے ہیں اور ہر ڈیل پر کمیشن Rs 30,000–50,000 ہو تو کل آمدنی Rs 90,000–150,000 تک ہو سکتی ہے۔
-        </li>
-        <li>
-          <strong>🔹 2. فری لانسنگ (آن لائن کمائی)</strong><br>
-          آپ ChatGPT کی مدد سے دوسرے ایجنٹس یا کاروباروں کے لیے:<br>
-          پراپرٹی ایڈز لکھ سکتے ہیں (انگریزی + اردو)<br>
-          پراپرٹی لسٹنگ ویب سائٹس پر مواد ڈال سکتے ہیں<br>
-          سوشل میڈیا پوسٹنگ سروس دے سکتے ہیں<br>
-          Fiverr یا Upwork پر یہ سروسز فی پراجیکٹ Rs 5,000–15,000 میں بکتی ہیں۔<br>
-          اگر آپ مہینے میں 10 آرڈر لے لیں تو Rs 50,000–150,000 کما سکتے ہیں۔
-        </li>
-        <li>
-          <strong>🔹 3. مقامی مارکیٹ کے لیے ڈیجیٹل کنسلٹنسی</strong><br>
-          آپ دوسرے پراپرٹی ڈیلرز کے لیے AI بیسڈ پیکیجز بنا سکتے ہیں:<br>
-          WhatsApp Auto Replies (ChatGPT سے تیار)<br>
-          Facebook/Instagram پوسٹنگ کیلنڈر<br>
-          ChatGPT سے FAQs (مثلاً: پلاٹ کا سائز، لوکیشن، قیمت)<br>
-          فی ڈیلر پیکج فیس Rs 20,000–30,000 رکھیں۔<br>
-          اگر 5 کلائنٹس مل جائیں تو ماہانہ Rs 1,00,000–1,50,000 کما سکتے ہیں۔
-        </li>
-        <li>
-          <strong>🔹 4. یوٹیوب / سوشل میڈیا چینل</strong><br>
-          ایک چینل شروع کریں: “پراپرٹی مارکیٹ گائیڈ پاکستان”<br>
-          ChatGPT سے اسکرپٹ لکھوائیں، موبائل پر ریکارڈ کریں۔<br>
-          ویڈیوز: "پلاٹ خریدنے کے 5 اصول", "پراپرٹی فراڈ سے بچنے کے طریقے", "کون سا ایریا کس کے لیے بہتر ہے"<br>
-          6–12 مہینوں میں چینل مونیٹائز ہو جائے تو ایڈز اور Sponsorship سے Rs 30,000–70,000 ماہانہ اضافی آمدنی۔
-        </li>
-      </ul>
+    <img src="girl.png" alt="A young student drawing or painting at a table" class="student-img" />
+    <div class="nav-row">
+      <a href="more-projects.html" class="nav-btn">More Projects</a>
+      <a href="index.html" class="nav-btn">Home</a>
+      <a href="registration.html" class="nav-btn">Registration</a>
     </div>
-    <div class="plan">
-      <strong>📌 مرحلہ وار ایکشن پلان</strong>
-      <ul>
-        <li><strong>پہلا مہینہ</strong>
-          <ul>
-            <li>WhatsApp Business پروفائل بنائیں، پراپرٹی کی لسٹنگ اپ لوڈ کریں۔</li>
-            <li>ChatGPT سے 20 پراپرٹی ایڈز اردو اور انگریزی میں لکھوائیں۔</li>
-            <li>Facebook Page اور OLX پر باقاعدہ پوسٹ کرنا شروع کریں۔</li>
-          </ul>
-        </li>
-        <li><strong>دوسرا مہینہ</strong>
-          <ul>
-            <li>Fiverr پر گگز لگائیں: “Property Ads Writing”, “Real Estate Listings”, “Facebook Marketing for Realtors”</li>
-            <li>کم از کم 2–3 فری لانس پروجیکٹ لیں۔</li>
-            <li>مقامی ایجنٹس کو WhatsApp پر AI سروس پیکجز کی آفر دیں۔</li>
-          </ul>
-        </li>
-        <li><strong>تیسرا سے چھٹا مہینہ</strong>
-          <ul>
-            <li>اپنے کلائنٹس اور ڈیلز کی تعداد بڑھائیں۔</li>
-            <li>یوٹیوب پر ہفتے میں 2 ویڈیوز اپلوڈ کریں۔</li>
-            <li>اپنی ایجنسی کو رجسٹر کرائیں (چھوٹے پیمانے پر بھی ممکن ہے)۔</li>
-          </ul>
-        </li>
-        <li><strong>چھٹے مہینے کے بعد</strong>
-          <ul>
-            <li>پراپرٹی کمیشن = Rs 90,000–150,000</li>
-            <li>فری لانسنگ = Rs 50,000–100,000</li>
-            <li>کنسلٹنسی = Rs 1,00,000+</li>
-            <li>یوٹیوب = Rs 30,000–70,000</li>
-            <li><b>کل آمدنی = Rs 2,00,000–3,00,000 ماہانہ (ممکنہ طور پر)</b></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <div class="summary">
-      ⚠️ <strong>احتیاط اور مشورے</strong>
-      <ul>
-        <li>ہمیشہ اصل اور قانونی دستاویزات کے ساتھ پراپرٹی ڈیل کریں تاکہ فراڈ سے بچیں۔</li>
-        <li>ChatGPT کو صرف سہولت کے لیے استعمال کریں (ایڈز، ڈاکیومنٹس، مارکیٹنگ)۔</li>
-        <li>اپنی محنت اور دیانتداری کو برانڈ بنائیں، اسی سے آپ کی مارکیٹ ویلیو بڑھے گی۔</li>
-      </ul>
-      🌟 مطلب یہ کہ صرف میٹرک کے بعد بھی، آپ AI اور ChatGPT کو ملا کر اپنی ریئل اسٹیٹ ایجنسی چلا سکتے ہیں اور مہینے میں Rs 1 لاکھ سے کہیں زیادہ کما سکتے ہیں۔<br><br>
-      کیا آپ چاہتے ہیں کہ میں آپ کے لیے 20 تیار شدہ پراپرٹی ایڈز (اردو + انگریزی) بنا دوں تاکہ آپ فوراً WhatsApp اور OLX پر لگانا شروع کر سکیں
-    </div>
-    <a class="back-link" href="AI-intro-urdu.html">⟵ واپس تعارف صفحہ</a>
   </div>
 </body>
 </html>
