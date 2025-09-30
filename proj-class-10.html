@@ -17,6 +17,8 @@
       max-width: 900px;
       margin: 32px auto;
       padding: 0 18px;
+      font-size: 2em; /* Increased font size by ~6pt */
+      line-height: 1.8;
     }
     .question {
       background: #fef3c7;
@@ -24,9 +26,10 @@
       border-radius: 9px;
       padding: 18px 18px 10px 18px;
       margin-bottom: 18px;
-      font-size: 1.23em;
+      font-size: 1.07em;
       color: #a16207;
       box-shadow: 0 2px 10px #ffeaa033;
+      position: relative;
     }
     .section {
       background: #ecfdf5;
@@ -34,9 +37,10 @@
       border-radius: 9px;
       padding: 18px 18px 10px 18px;
       margin-bottom: 18px;
-      font-size: 1.13em;
+      font-size: 0.97em;
       color: #065f46;
       box-shadow: 0 2px 10px #b7f9e033;
+      position: relative;
     }
     .plan {
       background: #f1f5f9;
@@ -44,9 +48,10 @@
       border-radius: 9px;
       padding: 18px 18px 10px 18px;
       margin-bottom: 18px;
-      font-size: 1.13em;
+      font-size: 0.97em;
       color: #1e293b;
       box-shadow: 0 2px 10px #c7dafe33;
+      position: relative;
     }
     .summary {
       background: #fff7ed;
@@ -54,10 +59,11 @@
       border-radius: 9px;
       padding: 18px;
       margin-top: 28px;
-      font-size: 1.13em;
+      font-size: 0.97em;
       color: #b45309;
       box-shadow: 0 2px 10px #fed7aa33;
       text-align: right;
+      position: relative;
     }
     .ads {
       background: #f0fdf4;
@@ -69,12 +75,22 @@
       color: #166534;
       box-shadow: 0 2px 10px #bbf7d033;
       direction: rtl;
+      position: relative;
     }
     .ads-title {
       font-weight: bold;
       color: #0d9488;
       margin-bottom: 6px;
       display: block;
+    }
+    .sketch {
+      display: block;
+      margin: 36px auto 30px auto;
+      opacity: 0.22;
+      max-width: 180px;
+      width: 90%;
+      min-width: 120px;
+      height: auto;
     }
     ul, ol {
       margin-right: 24px;
@@ -99,8 +115,9 @@
     }
     .back-link:hover { color: #3982e9; }
     @media (max-width: 600px) {
-      .container { padding: 0 2vw; }
+      .container { padding: 0 2vw; font-size: 1.1em;}
       .question, .section, .plan, .summary, .ads { font-size: 1em; padding: 13px 7px 7px 7px;}
+      .sketch { max-width: 110px; min-width: 60px;}
     }
   </style>
 </head>
@@ -110,6 +127,19 @@
       ❓ سوال<br>
       میری تعلیم صرف میٹرک (10 سال اسکول) تک ہے۔ میں روزانہ ریڑھی پر پھل بیچتا ہوں۔ میں AI یا ChatGPT کے ذریعے کس طرح کام کر سکتا ہوں اور کتنا کما سکتا ہوں؟
     </div>
+
+    <!-- SKETCH 1: Fruit Cart (Business/Startup/Small Vendor) -->
+    <span class="sketch">
+      <svg viewBox="0 0 140 60" fill="none">
+        <rect x="10" y="30" width="90" height="18" rx="6" stroke="#bfa47a" stroke-width="2.8" fill="#fff"/>
+        <ellipse cx="30" cy="48" rx="5" ry="5" fill="#fbbf24"/>
+        <ellipse cx="80" cy="48" rx="5" ry="5" fill="#10b981"/>
+        <rect x="20" y="20" width="70" height="12" rx="3" stroke="#fb923c" stroke-width="2" fill="#fffbe9"/>
+        <rect x="60" y="10" width="15" height="10" rx="4" stroke="#2563eb" stroke-width="1.6" fill="#f3e9da"/>
+        <path d="M30 48 Q45 40 80 48" stroke="#a16207" stroke-width="2"/>
+      </svg>
+    </span>
+
     <div class="section">
       ✅ <strong>تفصیلی جوابات اور راستے</strong>
       <ul>
@@ -125,6 +155,17 @@
           آپ علاقے میں Rs 50–100 فی آرڈر ڈلیوری فیس رکھ سکتے ہیں۔<br>
           <b>اگر روز 10 آرڈر آ جائیں تو مہینے میں صرف ڈلیوری سے Rs 15,000–30,000 اضافی آمدنی۔</b>
         </li>
+        <!-- SKETCH 2: AI/Computer (AI Chip) -->
+        <span class="sketch">
+          <svg viewBox="0 0 120 60" fill="none">
+            <rect x="35" y="18" width="50" height="28" rx="8" stroke="#2563eb" stroke-width="3" fill="#fff"/>
+            <rect x="43" y="25" width="34" height="14" rx="4" stroke="#10b981" stroke-width="2" fill="#fffbe9"/>
+            <rect x="8" y="28" width="18" height="4" rx="2" stroke="#bfa47a" stroke-width="1.4" fill="#fff"/>
+            <rect x="94" y="28" width="18" height="4" rx="2" stroke="#fb923c" stroke-width="1.4" fill="#fff"/>
+            <rect x="60" y="6" width="4" height="10" rx="2" stroke="#fbbf24" stroke-width="1.2" fill="#fff"/>
+            <rect x="60" y="44" width="4" height="10" rx="2" stroke="#fbbf24" stroke-width="1.2" fill="#fff"/>
+          </svg>
+        </span>
         <li>
           <strong>🔹 راستہ 3: فری لانسنگ پر چھوٹے کام</strong><br>
           آپ تعلیم زیادہ نہیں لیکن ChatGPT کی مدد سے ترجمہ، چھوٹے مضامین، آڈیو کو ٹیکسٹ میں بدلنا یا سادہ سوشل میڈیا پوسٹس بنا سکتے ہیں۔<br>
@@ -142,6 +183,19 @@
         </li>
       </ul>
     </div>
+
+    <!-- SKETCH 3: Science/Atom -->
+    <span class="sketch">
+      <svg viewBox="0 0 100 60" fill="none">
+        <ellipse cx="50" cy="30" rx="34" ry="14" stroke="#2563eb" stroke-width="2.6"/>
+        <ellipse cx="50" cy="30" rx="14" ry="34" stroke="#10b981" stroke-width="2.6" transform="rotate(45 50 30)"/>
+        <ellipse cx="50" cy="30" rx="14" ry="34" stroke="#fb923c" stroke-width="2.6" transform="rotate(-45 50 30)"/>
+        <circle cx="50" cy="30" r="7" fill="#bfa47a"/>
+        <circle cx="35" cy="30" r="3.5" fill="#2563eb"/>
+        <circle cx="65" cy="30" r="3.5" fill="#10b981"/>
+      </svg>
+    </span>
+
     <div class="plan">
       <strong>📌 مرحلہ وار عملی پلان</strong>
       <ul>
@@ -176,6 +230,17 @@
         </li>
       </ul>
     </div>
+
+    <!-- SKETCH 4: Education/Certificate -->
+    <span class="sketch">
+      <svg viewBox="0 0 130 60" fill="none">
+        <rect x="20" y="27" width="90" height="18" rx="6" stroke="#bfa47a" stroke-width="2.2" fill="#fff"/>
+        <rect x="58" y="35" width="14" height="8" rx="2" stroke="#10b981" stroke-width="1" fill="#fff"/>
+        <circle cx="65" cy="44" r="4" fill="#fb923c"/>
+        <path d="M30 35 L110 44" stroke="#2563eb" stroke-width="1.6"/>
+      </svg>
+    </span>
+
     <div class="summary">
       🔑 <strong>نتیجہ</strong><br>
       آپ صرف ریڑھی پر بیچنے کے بجائے AI اور ChatGPT کی مدد سے:<br>
