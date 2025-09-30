@@ -18,223 +18,157 @@
       margin: 44px auto 0 auto;
       padding: 0 20px;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 36px 24px;
+      flex-direction: column;
+      align-items: center;
       min-height: 90vh;
     }
+    .big-sketch {
+      margin: 0 0 36px 0;
+      width: 350px;
+      max-width: 80vw;
+      height: auto;
+      display: block;
+      opacity: 0.23;
+    }
+    .button-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 38px 32px;
+      width: 100%;
+    }
     .ai-box {
-      flex: 1 1 260px;
       min-width: 260px;
-      max-width: 350px;
-      border-radius: 26px 26px 56px 26px;
-      box-shadow: 0 8px 30px #b7f9e099, 0 1px 6px #0002;
-      padding: 48px 24px 48px 24px;
-      font-size: 1.08em;
+      max-width: 340px;
+      border-radius: 32px 32px 56px 32px;
+      box-shadow: 0 14px 48px #b7f9e0cc, 0 3px 14px #0002;
+      font-size: 1.12em;
       border: none;
       outline: none;
       cursor: pointer;
-      margin-bottom: 0;
       text-align: right;
       position: relative;
       transition: box-shadow 0.18s, transform 0.12s;
       background: #fff;
-      overflow: hidden;
+      padding: 44px 18px 44px 18px;
+      font-weight: bold;
+      margin-bottom: 0;
+      margin-top: 0;
       white-space: pre-line;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      z-index: 5;
     }
     .ai-box:hover {
-      box-shadow: 0 16px 60px #b7f9e0cc, 0 2px 8px #0003;
+      box-shadow: 0 22px 70px #a7e3f099, 0 12px 44px #0002;
       transform: translateY(-7px) scale(1.04);
-      z-index: 2;
+      z-index: 7;
     }
-    .green { background: linear-gradient(100deg, #e4fbe6 60%, #c6ece5 100%);}
-    .brown { background: linear-gradient(100deg, #f7f5ee 60%, #f3e9da 100%);}
-    .yellow { background: linear-gradient(100deg, #fffde4 60%, #fff6c9 100%);}
-    .purple { background: linear-gradient(100deg, #f8f6ff 60%, #e9e6fa 100%);}
-    .blue { background: linear-gradient(100deg, #e6f0fb 60%, #dbeafe 100%);}
-    .orange { background: linear-gradient(100deg, #fff2e4 60%, #ffe9c9 100%);}
-    .red { background: linear-gradient(100deg, #fee2e2 60%, #fecaca 100%);}
-    .gray { background: linear-gradient(100deg, #f3f4f6 60%, #e5e7eb 100%);}
+    .green { background: linear-gradient(120deg, #e4fbe6 60%, #c6ece5 100%);}
+    .brown { background: linear-gradient(120deg, #f7f5ee 60%, #f3e9da 100%);}
+    .yellow { background: linear-gradient(120deg, #fffde4 60%, #fff6c9 100%);}
+    .purple { background: linear-gradient(120deg, #f8f6ff 60%, #e9e6fa 100%);}
+    .blue { background: linear-gradient(120deg, #e6f0fb 60%, #dbeafe 100%);}
+    .orange { background: linear-gradient(120deg, #fff2e4 60%, #ffe9c9 100%);}
     .sketch {
       position: absolute;
-      left: 16px;
-      bottom: 12px;
-      width: 64px;
-      height: 64px;
-      opacity: 0.28;
+      left: 22px;
+      bottom: 16px;
+      width: 58px;
+      height: 58px;
+      opacity: 0.32;
       pointer-events: none;
     }
     .more-projects-link {
       text-align: center;
-      margin: 42px 0 22px 0;
+      margin: 54px 0 28px 0;
     }
     .more-projects-link a {
       display: inline-block;
       background: linear-gradient(100deg,#e4fbe6 60%,#a7e3f0 100%);
       color: #2563eb;
-      font-size: 1.15em;
-      padding: 18px 38px;
-      border-radius: 24px 36px 24px 36px;
-      box-shadow: 0 6px 20px #b7f9e055, 0 1px 2px #0001;
+      font-size: 1.16em;
+      padding: 22px 64px;
+      border-radius: 32px 44px 32px 44px;
+      box-shadow: 0 10px 36px #b7f9e099, 0 2px 8px #0002;
       text-decoration: none;
       font-weight: bold;
       transition: box-shadow 0.14s, transform 0.11s;
+      font-family: inherit;
     }
     .more-projects-link a:hover {
-      box-shadow: 0 14px 34px #a7e3f099, 0 2px 8px #0002;
+      box-shadow: 0 18px 48px #a7e3f099, 0 2px 8px #0002;
       background: linear-gradient(100deg,#a7e3f0 60%,#e4fbe6 100%);
+      transform: translateY(-4px) scale(1.03);
     }
     @media (max-width: 900px) {
-      .container { flex-direction: column; gap: 22px; }
-      .ai-box { max-width: 98vw; min-width: 0; }
+      .button-grid { gap: 18px 7vw; }
+      .ai-box { max-width: 96vw; min-width: 0; }
+      .big-sketch { width: 90vw;}
     }
     @media (max-width: 600px) {
-      .container { padding: 0 4vw; }
-      .ai-box { font-size: 1em; padding: 22px 9px 38px 9px;}
-      .sketch { left: 8px; width: 44px; height: 44px;}
-      .more-projects-link a { font-size: 1em; padding: 12px 8vw;}
+      .container { padding: 0 2vw; }
+      .ai-box { font-size: 1em; padding: 20px 8px 32px 8px;}
+      .sketch { left: 8px; width: 38px; height: 38px;}
+      .big-sketch { width: 98vw;}
+      .more-projects-link a { font-size: 1em; padding: 12px 6vw;}
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Box 1 -->
-    <button class="ai-box green" onclick="window.location.href='proj-class6.html'">
-      مصنوعی ذہانت 
-آپ سے زیادہ ذہین
- نہیں ہو سکتی،
- لیکن اسے کی ضرورت ہے کہ آئیں اور ہمارے ساتھ مشق کریں۔
-      <span class="sketch">
-        <!-- Bulb SVG -->
-        <svg viewBox="0 0 54 54" fill="none"><ellipse cx="27" cy="27" rx="20" ry="22" stroke="#7dd87f" stroke-width="2.7"/><path d="M27 44v6" stroke="#7dd87f" stroke-width="2.2" stroke-linecap="round"/><ellipse cx="27" cy="52" rx="3.8" ry="2" stroke="#7dd87f" stroke-width="1.6"/></svg>
-      </span>
-    </button>
-    <!-- Box 2 -->
-    <button class="ai-box brown" onclick="window.location.href='proj-bcom.html'">
-      یہ ویب سائٹ آپ کی مدد کے لیے ہے تاکہ آپ مصنوعی ذہانت کا آغاز کریں،
- اسے کر کے سیکھیں — سیکھنے کا ایک نیا طریقہ: "عمل کے ذریعے سیکھنا"
-      <span class="sketch">
-        <!-- Book SVG -->
-        <svg viewBox="0 0 54 54" fill="none"><rect x="8" y="10" width="38" height="34" rx="6" stroke="#bfa47a" stroke-width="2.3"/><path d="M27 10v34" stroke="#bfa47a" stroke-width="2.1"/><path d="M8 18h38" stroke="#bfa47a" stroke-width="1.6"/></svg>
-      </span>
-    </button>
-    <!-- Box 3 -->
-    <button class="ai-box yellow" onclick="window.location.href='proj-class-10.html'">
-      مصنوعی ذہانت:
- آپ کی زندگی، آپ کی آمدنی اور آپ کے شوق کو بدلنے کے لیے
-      <span class="sketch">
-        <!-- Rocket SVG -->
-        <svg viewBox="0 0 54 54" fill="none"><path d="M27 44 L40 24 Q34 16 27 10 Q20 16 14 24 L27 44 Z" stroke="#e6c16b" stroke-width="2.3"/><circle cx="27" cy="18" r="3.2" stroke="#e6c16b" stroke-width="1.7"/></svg>
-      </span>
-    </button>
-    <!-- Box 4 -->
-    <button class="ai-box purple" onclick="window.location.href='proj-eng.html'">
-      پروجیکٹ 8<br>Project 8
-      <span class="sketch">
-        <!-- AI Brain SVG -->
-        <svg viewBox="0 0 54 54" fill="none"><ellipse cx="27" cy="27" rx="18" ry="15" stroke="#a78bfa" stroke-width="2.7"/><path d="M16 36 Q25 18 27 27 Q29 36 38 18" stroke="#2563eb" stroke-width="2.3" fill="none"/><circle cx="22" cy="27" r="2.5" fill="#7dd87f"/><circle cx="27" cy="27" r="2.5" fill="#2563eb"/><circle cx="32" cy="25" r="2.5" fill="#e6c16b"/></svg>
-      </span>
-    </button>
-    <!-- Box 5 -->
-    <button class="ai-box blue" onclick="window.location.href='proj-ba.html'">
-      پروجیکٹ 9<br>Project 9
-      <span class="sketch">
-        <!-- Monitor SVG -->
-        <svg viewBox="0 0 54 54" fill="none"><rect x="10" y="10" width="34" height="24" rx="5" stroke="#2563eb" stroke-width="2.3"/><rect x="16" y="36" width="22" height="4" rx="2" stroke="#bfa47a" stroke-width="1.4"/><circle cx="27" cy="18" r="2.7" fill="#2563eb"/></svg>
-      </span>
-    </button>
-    <!-- Box 6 -->
-    <button class="ai-box orange" onclick="window.location.href='proj-mba.html'">
-      پروجیکٹ 10<br>Project 10
-      <span class="sketch">
-        <!-- Vector Network SVG -->
-        <svg viewBox="0 0 54 54" fill="none"><circle cx="17" cy="27" r="7" stroke="#2563eb" stroke-width="2"/><circle cx="37" cy="27" r="7" stroke="#10b981" stroke-width="2"/><circle cx="27" cy="12" r="4" stroke="#e6c16b" stroke-width="1.6"/><circle cx="27" cy="42" r="4" stroke="#bfa47a" stroke-width="1.6"/><line x1="24" y1="20" x2="27" y2="12" stroke="#2563eb" stroke-width="1.3"/><line x1="30" y1="20" x2="27" y2="12" stroke="#10b981" stroke-width="1.3"/><line x1="24" y1="34" x2="27" y2="42" stroke="#2563eb" stroke-width="1.3"/><line x1="30" y1="34" x2="27" y2="42" stroke="#10b981" stroke-width="1.3"/></svg>
-      </span>
-    </button>
-    <!-- Box 7 -->
-    <button class="ai-box red" onclick="window.location.href='proj-moblie-3.html'">
-      پروجیکٹ 11<br>Project 11
-      <span class="sketch">
-        <!-- Mobile SVG -->
-        <svg viewBox="0 0 54 54" fill="none"><rect x="15" y="8" width="24" height="38" rx="6" stroke="#fb923c" stroke-width="2.3"/><rect x="23" y="42" width="8" height="4" rx="1.5" fill="#10b981"/><circle cx="27" cy="12" r="2.2" fill="#7dd87f"/></svg>
-      </span>
-    </button>
-    <!-- Box 8 -->
-    <button class="ai-box brown" onclick="window.location.href='proj-class-11.html'">
-      پروجیکٹ 12<br>Project 12
-      <span class="sketch">
-        <!-- Book SVG -->
-        <svg viewBox="0 0 54 54" fill="none"><rect x="8" y="10" width="38" height="34" rx="6" stroke="#bfa47a" stroke-width="2.3"/><path d="M27 10v34" stroke="#bfa47a" stroke-width="2.1"/><path d="M8 18h38" stroke="#bfa47a" stroke-width="1.6"/></svg>
-      </span>
-    </button>
-    <!-- Box 9 -->
-    <button class="ai-box green" onclick="window.location.href='proj-phsy.html'">
-      پروجیکٹ 13<br>Project 13
-      <span class="sketch">
-        <!-- Atom SVG -->
-        <svg viewBox="0 0 54 54" fill="none"><ellipse cx="27" cy="27" rx="15" ry="6" stroke="#2563eb" stroke-width="2"/><ellipse cx="27" cy="27" rx="6" ry="15" stroke="#10b981" stroke-width="2" transform="rotate(45 27 27)"/><ellipse cx="27" cy="27" rx="6" ry="15" stroke="#e6c16b" stroke-width="2" transform="rotate(-45 27 27)"/><circle cx="27" cy="27" r="3.5" fill="#bfa47a"/></svg>
-      </span>
-    </button>
-    <!-- Box 10 -->
-    <button class="ai-box blue" onclick="window.location.href='proj-eng-chem.html'">
-      پروجیکٹ 14<br>Project 14
-      <span class="sketch">
-        <!-- Chemistry SVG -->
-        <svg viewBox="0 0 54 54" fill="none">
-          <rect x="8" y="14" width="38" height="26" rx="6" stroke="#2563eb" stroke-width="2.3"/>
-          <circle cx="27" cy="27" r="7" stroke="#a78bfa" stroke-width="2"/>
-        </svg>
-      </span>
-    </button>
-    <!-- Box 11 -->
-    <button class="ai-box orange" onclick="window.location.href='AI-intro-urdu.html'">
-      پروجیکٹ 15<br>Project 15
-      <span class="sketch">
-        <!-- AI Urdu Intro SVG -->
-        <svg viewBox="0 0 54 54" fill="none">
-          <circle cx="27" cy="27" r="20" stroke="#fb923c" stroke-width="2.3"/>
-          <rect x="19" y="19" width="16" height="16" rx="3" stroke="#10b981" stroke-width="1.7"/>
-        </svg>
-      </span>
-    </button>
-    <!-- Box 12 -->
-    <button class="ai-box purple" onclick="window.location.href='ai.message.html'">
-      پروجیکٹ 16<br>Project 16
-      <span class="sketch">
-        <!-- Message SVG -->
-        <svg viewBox="0 0 54 54" fill="none">
-          <ellipse cx="27" cy="27" rx="16" ry="10" stroke="#a78bfa" stroke-width="2.3"/>
-          <ellipse cx="27" cy="27" rx="10" ry="16" stroke="#2563eb" stroke-width="2.3" transform="rotate(45 27 27)"/>
-        </svg>
-      </span>
-    </button>
-    <!-- Box 13 -->
-    <button class="ai-box green" onclick="window.location.href='proj-moblie-3.html'">
-      پروجیکٹ 17<br>Project 17
-      <span class="sketch">
-        <!-- Mobile SVG -->
-        <svg viewBox="0 0 54 54" fill="none">
-          <rect x="16" y="12" width="22" height="32" rx="6" stroke="#7dd87f" stroke-width="2.3"/>
-          <circle cx="27" cy="40" r="2.5" fill="#e6c16b"/>
-        </svg>
-      </span>
-    </button>
-    <!-- Box 14 -->
-    <button class="ai-box yellow" onclick="window.location.href='proj-class-11.html'">
-      پروجیکٹ 18<br>Project 18
-      <span class="sketch">
-        <!-- Education SVG -->
-        <svg viewBox="0 0 54 54" fill="none">
-          <rect x="10" y="18" width="34" height="18" rx="5" stroke="#e6c16b" stroke-width="2.3"/>
-          <circle cx="27" cy="27" r="4" fill="#bfa47a"/>
-          <ellipse cx="27" cy="27" rx="14" ry="3" stroke="#a78bfa" stroke-width="1.3"/>
-        </svg>
-      </span>
-    </button>
-  </div>
-  <div class="more-projects-link">
-    <a href="more-projects.html">مزید پروجیکٹس دیکھیں</a>
+    <!-- Big SVG sketch at top -->
+    <span class="big-sketch">
+      <svg viewBox="0 0 320 120" fill="none">
+        <ellipse cx="160" cy="60" rx="120" ry="48" stroke="#a78bfa" stroke-width="7"/>
+        <ellipse cx="160" cy="60" rx="48" ry="120" stroke="#10b981" stroke-width="7" transform="rotate(45 160 60)"/>
+        <ellipse cx="160" cy="60" rx="120" ry="16" stroke="#e6c16b" stroke-width="3"/>
+        <circle cx="210" cy="60" r="10" fill="#bfa47a"/>
+        <circle cx="110" cy="60" r="10" fill="#fb923c"/>
+      </svg>
+    </span>
+    <div class="button-grid">
+      <button class="ai-box green" onclick="window.location.href='proj-class6.html'">
+        پروجیکٹ 8
+        <span class="sketch">
+          <svg viewBox="0 0 54 54" fill="none"><ellipse cx="27" cy="27" rx="20" ry="22" stroke="#7dd87f" stroke-width="2.7"/><ellipse cx="27" cy="52" rx="3.8" ry="2" stroke="#7dd87f" stroke-width="1.6"/></svg>
+        </span>
+      </button>
+      <button class="ai-box brown" onclick="window.location.href='proj-bcom.html'">
+        پروجیکٹ 9
+        <span class="sketch">
+          <svg viewBox="0 0 54 54" fill="none"><rect x="8" y="10" width="38" height="34" rx="6" stroke="#bfa47a" stroke-width="2.3"/></svg>
+        </span>
+      </button>
+      <button class="ai-box yellow" onclick="window.location.href='proj-class-10.html'">
+        پروجیکٹ 10
+        <span class="sketch">
+          <svg viewBox="0 0 54 54" fill="none"><path d="M27 44 L40 24 Q34 16 27 10 Q20 16 14 24 L27 44 Z" stroke="#e6c16b" stroke-width="2.3"/></svg>
+        </span>
+      </button>
+      <button class="ai-box purple" onclick="window.location.href='proj-eng.html'">
+        پروجیکٹ 11
+        <span class="sketch">
+          <svg viewBox="0 0 54 54" fill="none"><ellipse cx="27" cy="27" rx="18" ry="15" stroke="#a78bfa" stroke-width="2.7"/></svg>
+        </span>
+      </button>
+      <button class="ai-box blue" onclick="window.location.href='proj-ba.html'">
+        پروجیکٹ 12
+        <span class="sketch">
+          <svg viewBox="0 0 54 54" fill="none"><rect x="10" y="10" width="34" height="24" rx="5" stroke="#2563eb" stroke-width="2.3"/></svg>
+        </span>
+      </button>
+      <button class="ai-box orange" onclick="window.location.href='proj-mba.html'">
+        پروجیکٹ 13
+        <span class="sketch">
+          <svg viewBox="0 0 54 54" fill="none"><circle cx="27" cy="27" r="7" stroke="#e6c16b" stroke-width="2"/></svg>
+        </span>
+      </button>
+    </div>
+    <div class="more-projects-link">
+      <a href="more-projects.html">مزید پروجیکٹس دیکھیں</a>
+    </div>
   </div>
 </body>
 </html>
