@@ -2,145 +2,125 @@
 <html lang="ur">
 <head>
   <meta charset="UTF-8">
-  <title>your-business</title>
+  <title>Artificial Intelligence - Learn By Doing</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      background: linear-gradient(135deg, #e8fdf5 0%, #fffbe9 100%);
+      background: linear-gradient(120deg, #e3ffe8 0%, #f9eaff 100%);
       font-family: 'Segoe UI', Arial, 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', sans-serif;
       margin: 0;
       direction: rtl;
-      color: #28313f;
-      font-size: 2em;
+      color: #232946;
+      font-size: 2.1em;
+      min-height: 100vh;
     }
     .container {
-      max-width: 700px;
-      margin: 44px auto 0 auto;
-      padding: 0 20px;
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 22px 0 0 0;
       display: flex;
       flex-direction: column;
       align-items: center;
-      min-height: 70vh;
+      min-height: 93vh;
     }
-    .big-sketch {
+    .sketch {
       margin: 0 0 36px 0;
-      width: 350px;
-      max-width: 80vw;
+      width: 420px;
+      max-width: 92vw;
       height: auto;
       display: block;
-      opacity: 0.23;
+      opacity: 0.96;
+      border-radius: 68px 28px 88px 44px;
+      box-shadow: 0 14px 64px #b7f9e055, 0 0px 14px #0002;
     }
-    h1 {
-      text-align:center;
-      font-size:2.2em;
-      margin:32px 0 8px 0;
-      font-family:inherit;
+    .main-title {
       color: #10b981;
-      letter-spacing:2px;
-    }
-    .reg-form {
-      background: #fff;
-      border-radius: 32px 32px 56px 32px;
-      box-shadow: 0 14px 48px #b7f9e099, 0 3px 14px #0002;
-      padding: 40px 28px 32px 28px;
-      max-width: 430px;
-      width: 100%;
-      margin-bottom: 24px;
-      margin-top: 8px;
-      font-size: 1.1em;
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
-    }
-    .reg-form label {
-      margin-bottom: 10px;
+      font-size: 2.5em;
       font-weight: bold;
-    }
-    .reg-form input, .reg-form select {
-      padding: 10px;
-      margin-bottom: 22px;
-      border-radius: 12px;
-      border: 1.5px solid #a7e3f0;
-      font-size: 1em;
+      text-shadow: 0 2px 18px #b7f9e088;
+      margin-bottom: 14px;
+      letter-spacing: 2px;
       font-family: inherit;
-      background: #f8f6ff;
     }
-    .reg-form button {
-      background: linear-gradient(100deg,#e4fbe6 60%,#a7e3f0 100%);
+    .subtitle {
       color: #2563eb;
-      padding: 16px 0;
-      border: none;
-      border-radius: 24px 36px 24px 36px;
-      font-size: 1.12em;
-      font-weight: bold;
-      box-shadow: 0 10px 36px #b7f9e099, 0 2px 8px #0002;
-      cursor: pointer;
-      transition: box-shadow 0.14s, transform 0.11s;
+      font-size: 1.18em;
+      margin-bottom: 18px;
+      font-family: inherit;
     }
-    .reg-form button:hover {
-      box-shadow: 0 18px 48px #a7e3f099, 0 2px 8px #0002;
-      background: linear-gradient(100deg,#a7e3f0 60%,#e4fbe6 100%);
-      transform: translateY(-4px) scale(1.03);
+    .statement {
+      background: linear-gradient(110deg, #f8f6ff 65%, #e0fdf5 100%);
+      border-radius: 38px 38px 68px 38px;
+      box-shadow: 0 8px 34px #b7f9e033, 0 2px 12px #0001;
+      padding: 38px 36px 32px 36px;
+      margin-bottom: 24px;
+      font-size: 1.04em;
+      line-height: 1.7;
+      text-align: center;
+      color: #28313f;
     }
-    .nav-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 32px;
-      margin: 54px 0 28px 0;
-    }
-    .nav-btn {
+    .main-btn {
       display: inline-block;
-      background: linear-gradient(100deg,#e4fbe6 60%,#a7e3f0 100%);
+      background: linear-gradient(90deg,#e4fbe6 60%,#a7e3f0 100%);
       color: #2563eb;
-      font-size: 1.16em;
+      font-size: 1.14em;
       padding: 22px 64px;
       border-radius: 32px 44px 32px 44px;
-      box-shadow: 0 10px 36px #b7f9e099, 0 2px 8px #0002;
+      box-shadow: 0 8px 32px #b7f9e099, 0 2px 8px #0002;
       text-decoration: none;
       font-weight: bold;
       transition: box-shadow 0.14s, transform 0.11s;
       font-family: inherit;
+      margin-top: 32px;
+      margin-bottom: 30px;
     }
-    .nav-btn:hover {
-      box-shadow: 0 18px 48px #a7e3f099, 0 2px 8px #0002;
-      background: linear-gradient(100deg,#a7e3f0 60%,#e4fbe6 100%);
+    .main-btn:hover {
+      box-shadow: 0 16px 44px #a7e3f099, 0 2px 8px #0002;
+      background: linear-gradient(90deg,#a7e3f0 60%,#e4fbe6 100%);
       transform: translateY(-4px) scale(1.03);
+      color: #10b981;
     }
     @media (max-width: 900px) {
-      .big-sketch { width: 90vw;}
+      .sketch { width: 99vw; }
+      .container { padding: 0; }
+      .main-title { font-size: 2em; }
+      .statement { font-size: 1em; padding: 14px 8vw 22px 8vw;}
     }
     @media (max-width: 600px) {
-      .container { padding: 0 2vw; }
-      .big-sketch { width: 98vw;}
-      .reg-form { padding: 20px 8px 18px 8px; }
-      .nav-btn { font-size: 1em; padding: 12px 6vw;}
+      .container { padding: 0; }
+      .sketch { width: 100vw;}
+      .main-title { font-size: 1.2em; }
+      .statement { padding: 8px 2vw 12px 2vw;}
+      .main-btn { font-size: 1em; padding: 14px 10vw;}
     }
   </style>
 </head>
 <body>
-  <h1>your-business</h1>
   <div class="container">
-    <span class="big-sketch">
-      <svg viewBox="0 0 320 120" fill="none">
-        <ellipse cx="160" cy="60" rx="120" ry="48" stroke="#10b981" stroke-width="7"/>
-        <ellipse cx="160" cy="60" rx="48" ry="120" stroke="#a78bfa" stroke-width="7" transform="rotate(25 160 60)"/>
-        <ellipse cx="160" cy="60" rx="120" ry="16" stroke="#fb923c" stroke-width="3"/>
-        <circle cx="210" cy="60" r="10" fill="#2563eb"/>
-        <circle cx="110" cy="60" r="10" fill="#e6c16b"/>
-      </svg>
-    </span>
-    <form class="reg-form">
-      <label for="name">نام:</label>
-      <input type="text" id="name" name="name" placeholder="اپنا نام لکھیں" required>
-      <label for="email">ای میل:</label>
-      <input type="email" id="email" name="email" placeholder="اپنی ای میل لکھیں" required>
-      <label for="password">پاس ورڈ:</label>
-      <input type="password" id="password" name="password" placeholder="پاس ورڈ منتخب کریں" required>
-      <button type="submit">رجسٹر کریں</button>
-    </form>
-    <div class="nav-buttons">
-      <a href="more-projects.html" class="nav-btn">مزید پروجیکٹس دیکھیں</a>
+    <img src="https://raw.githubusercontent.com/hijaziviews/your-business/main/colorful-ai-sketch.png" alt="AI Art" class="sketch" />
+    <div class="main-title">مصنوعی ذہانت</div>
+    <div class="statement">
+      آپ سے زیادہ ذہین نہیں ہو سکتی،<br>
+      لیکن اسے کی ضرورت ہے کہ آئیں اور ہمارے ساتھ مشق کریں۔
+      <br><br>
+      یہ ویب سائٹ آپ کی مدد کے لیے ہے تاکہ آپ مصنوعی ذہانت کا آغاز کریں، اسے کر کے سیکھیں — سیکھنے کا ایک نیا طریقہ: <b>عمل کے ذریعے سیکھنا</b>
+      <br><br>
+      <span style="color:#fb923c;font-weight:bold;">مصنوعی ذہانت:</span>
+      <br>
+      آپ کی زندگی، آپ کی آمدنی اور آپ کے شوق کو بدلنے کے لیے
     </div>
+    <a href="registration.html" class="main-btn">رجسٹریشن صفحہ</a>
   </div>
+  <!-- Decorative SVG at the very bottom for extra color -->
+  <svg width="100%" height="80" viewBox="0 0 800 80" fill="none" style="position:fixed;left:0;bottom:0;z-index:-1;" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="paint0" x1="0" y1="0" x2="800" y2="80" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#a7e3f0"/>
+        <stop offset="0.5" stop-color="#f8f6ff"/>
+        <stop offset="1" stop-color="#fb923c"/>
+      </linearGradient>
+    </defs>
+    <path d="M0 40 Q 200 110, 400 40 T 800 40 V80 H0z" fill="url(#paint0)" opacity="0.32"/>
+  </svg>
 </body>
 </html>
